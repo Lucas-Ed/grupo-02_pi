@@ -1,0 +1,23 @@
+@startuml
+
+class Usuario {
+    - nome: String
+    - email: String
+    + getEmail(): String
+    + getNome(): String
+}
+
+class Newsletter {
+    - listaInscritos: List<Usuario>
+    + verificarInscricao(email: String): boolean
+    + inscreverUsuario(usuario: Usuario): void
+}
+
+class ServicoInscricao {
+    + realizarInscricao(email: String, nome: String): String
+}
+
+Newsletter "1" --> "*" Usuario : "contém"
+ServicoInscricao --> Newsletter : "usa"
+
+@enduml
