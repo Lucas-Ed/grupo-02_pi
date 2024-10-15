@@ -1,0 +1,13 @@
+@startuml
+participant "Usuário" as user
+participant "Sistema de Newsletter" as system
+
+user -> system: Enviar e-mail e nome
+system -> system: Verificar se o e-mail já está inscrito
+alt Inscrição já existe
+    system -> user: Exibir mensagem de usuário já inscrito
+else Nova inscrição
+    system -> system: Registrar novo usuário
+    system -> user: Exibir mensagem de inscrição realizada
+end
+@enduml
