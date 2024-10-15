@@ -1,0 +1,21 @@
+@startuml
+start
+:Informa um novo e-mail;
+:Informa o nome;
+:Verifica se a inscrição já existe;
+
+if (Capturou erro?) then (Sim)
+    :Exibe mensagem de erro;
+    stop
+else (Não)
+
+if (Inscrição já existe?) then (Não)
+    :Exibe mensagem de inscrição realizada;
+    stop
+else (Sim)
+    :Exibe mensagem de usuário já inscrito;
+    stop
+endif
+@enduml
+
+
