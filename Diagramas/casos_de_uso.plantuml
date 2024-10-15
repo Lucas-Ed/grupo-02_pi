@@ -1,0 +1,21 @@
+
+@startuml
+left to right direction
+actor "Cliente" as cliente
+rectangle Aplicação {
+  usecase "Acesso as cat. navbar" as categorias_produtos
+  usecase "Redes sociais" as redes
+  usecase "Cards Atend. WhatsApp" as zap
+  usecase "Formulário newsletter" as newsletter
+
+
+
+}
+
+cliente --> categorias_produtos
+cliente --> redes
+cliente --> zap
+cliente --> newsletter
+@enduml
+
+
