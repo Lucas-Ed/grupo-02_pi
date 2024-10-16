@@ -5,7 +5,7 @@ actor "Cliente" as cliente
 rectangle Aplicação {
   usecase "Acesso as cat. navbar" as categorias_produtos
   usecase "Redes sociais" as redes
-  usecase "Cards Atend. WhatsApp" as zap
+  usecase "Atendimento WhatsApp" as zap
   usecase "Formulário newsletter" as newsletter
 
 

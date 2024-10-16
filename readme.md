@@ -96,7 +96,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
         </sub>
        </a>
        <br />
-       <a href="https://www.instagram.com" title="instagram">@felipe</a>
+       <a href="https://www.instagram.com/fe.r0cha" title="instagram">@fe.r0cha</a>
        <br />
     </td>
     <td align="center">
