@@ -1,0 +1,108 @@
+---
+title: "" # Deixamos o título vazio para personalizar o primeiro slide
+subtitle: ""
+institute: ""
+date: ""
+encoding: "UTF-8"
+output:
+  xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
+    css: ["fc", custom.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+<div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+  <div style="flex: 1;">
+    <h1 style="margin: 0; font-size: 2.5em; color: #ff4500;">Apresentação Pi</h1>
+    <p style="margin: 5px 0 0 0; font-size: 1.5em; color: black;">Fatec Araras</p>
+    <p style="margin: 5px 0 0 0; font-size: 1.2em; color: black;">`r Sys.Date()`</p>
+  </div>
+      <p style="position: absolute; bottom: 200px; align-itens: center; font-size: 1.5em; color: black;">Grupo 02</p>
+  <div style="flex: 1; text-align: right;">
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+
+---
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width----> <!--Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<p align="center">                        <!--largura--> <!--Altura-->
+    <img src="img/desktop.png" alt="Image" width="700" height="550" />
+</p>
+
+---
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+
+---
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<p align="center">                        <!--largura--> <!--Altura-->
+    <img src="img/tab.png" alt="Image" width="550" height="450" />
+</p>
+
+---
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<p align="center">                        <!--largura--> <!--Altura-->
+    <img src="img/smartphone1.png" alt="Image" width="300" height="550" />
+</p>
+
+---
+#  Muito obrigado !
+<div style="color: black;">
+- Informações úteis
+</div>
+
+[whatsapp](https://bit.ly/3uMmzeI)
+
+
+
+[Github do grupo-02](https://github.com/Lucas-Ed/grupo-02_pi)
+
+
+---
+### Tecnologias utilizadas para esta apresentação: 
+
+<p align="center">
+    <img src="img/xa.png" alt="Image" width="650" height="450" />
+</p>

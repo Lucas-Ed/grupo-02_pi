@@ -1,0 +1,32 @@
+/*.remark-slide-content{background-color: #13131F;}*/
+/* Cor de fundo branco para todos os slides */
+.remark-slide-content {
+  background-color: #13131F;
+  color: #000000; /* Texto preto para contraste */
+}
+
+/* Cor de fundo escuro para o primeiro slide */
+.remark-slide:nth-of-type(1) .remark-slide-content {
+  background-color:#FFFFFF;
+  color: #FFFFFF; /* Texto branco para contraste */
+}
+
+
+a {
+  font-weight: bold;
+  color: #EE7026;
+  font-family: Andale Mono, monospace;
+  font-size:20px;
+  font-style: normal;
+  text-decoration:none;
+}
+p {
+  font-weight: bold;
+  color: white;
+  font-family: Andale Mono, monospace;
+  font-size:20px;
+  font-style: normal;
+  text-decoration:none;
+}
+h1 {font-weight: bold;  font-family: Andale Mono, monospace;}
+
