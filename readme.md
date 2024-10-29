@@ -42,11 +42,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 </p>
 
-## 💻 Projeto
+## 💻 Layout do Projeto
 
-<h4 align="center"> 
-	🚧 🚀 Em construção...  🚧
-</h4>
+![](/img/gif_apresentação.gif)
+
+Para ver o layout completo solicite acesso [aqui.](https://www.figma.com/design/sIfEtyseMbpBPBKTnMTnAm/Casa-S%C3%B4nia-Fashion?node-id=0-88&t=xCCDPaCHfE8gytH9-1)
 
 
 ## 🛠 Métodologia ágil-( Scrum ) 

@@ -5,7 +5,7 @@
   color: #000000; /* Texto preto para contraste */
 }
 
-/* Cor de fundo escuro para o primeiro slide */
+/* Cor de fundo branco para o primeiro slide */
 .remark-slide:nth-of-type(1) .remark-slide-content {
   background-color:#FFFFFF;
   color: #FFFFFF; /* Texto branco para contraste */
