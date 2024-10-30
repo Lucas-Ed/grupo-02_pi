@@ -51,7 +51,7 @@ Para ver o layout completo solicite acesso [aqui.](https://www.figma.com/design/
 
 ## 🛠 Métodologia ágil-( Scrum ) 
 
-Para o gerenciamento, do projeto, foi utilizado o [Trello,](https://trello.com/invite/b/670a36ac9fdfb633bd12bc42/ATTIc0bd37a0dad55feb71e78e437d7367886CFD379C/fatec-pi-documentacao-casa-sonia-fashion), solicite acesso para vizualizar ao quadro no link anterior;  O Trello é uma ferramenta para melhor controle e divisão de tarefas entre os autores, ficando da seguinte forma igual da imagem abaixo:
+Para o gerenciamento, do projeto, foi utilizado o [Trello](https://trello.com/invite/b/670a36ac9fdfb633bd12bc42/ATTIc0bd37a0dad55feb71e78e437d7367886CFD379C/fatec-pi-documentacao-casa-sonia-fashion), solicite acesso para vizualizar ao quadro no link anterior;  O Trello é uma ferramenta para melhor controle e divisão de tarefas entre os autores, ficando da seguinte forma igual da imagem abaixo:
 
 ![](img/trello.png)
 
