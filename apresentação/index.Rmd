@@ -14,19 +14,23 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-<div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
-  <div style="flex: 1;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; height: 70vh; padding: 0 50px; margin-top: 150px;">
+  <div style="flex: 1; text-align: center;">
     <h1 style="margin: 0; font-size: 2.5em; color: #ff4500;">Apresentação Pi</h1>
-    <p style="margin: 5px 0 0 0; font-size: 1.5em; color: black;">Fatec Araras</p>
-    <p style="margin: 5px 0 0 0; font-size: 1.2em; color: black;">`r Sys.Date()`</p>
+    <p style="margin: 5px 0; font-size: 1.5em; color: black;">Fatec Araras</p>
+    <p style="margin: 5px 0; font-size: 1.2em; color: black;">`r Sys.Date()`</p> <!-- Pode substituir por 2024-10-29 para a data automática no Rmarkdown -->
+    <p style="margin: 15px 0; font-size: 1.5em; color: black;">Grupo 02</p>
   </div>
-      <p style="position: absolute; bottom: 200px; align-itens: center; font-size: 1.5em; color: black;">Grupo 02</p>
-  <div style="flex: 1; text-align: right;">
+  <div style="flex: 1; text-align: right;  margin-top: 40px;">
     <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
   </div>
 </div>
 
+
 ---
+<!--------Slide--0-2-------------------->
+<!---------Colaboradores--------------------->
+
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -38,11 +42,103 @@ output:
 </div>
 <!---fim-Logos-topo-da-pagina---->
 
-<p align="center">                        <!--largura--> <!--Altura-->
-    <img src="img/desktop.png" alt="Image" width="700" height="550" />
-</p>
+# Colaboradores
+
+[Lucas Eduardo ](linktr.ee/lucas.007)
+
+[Renan Augusto](https://github.com/Marques894)
+
+[Jeferson Felipe](https://github.com/Jefferson434)
+
+[Wilson Pereira](https://github.com/willsf2021)
+
+[Bruna Ferreira](https://github.com/BFerreiraCardoso)
+
+[Felipe  Rocha](https://github.com/FlpRocha236)
 
 ---
+<!--------Slide--0-3-------------------->
+<!---------introdução--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Introdução
+
+<a>Título do Projeto
+Objetivo da Apresentação: breve introdução sobre o que será discutido e a importância do projeto.</a>
+
+
+---
+<!--------Slide--0-4-------------------->
+<!---------Objetivo--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<a>Descrição breve do objetivo principal do projeto.
+Destaque: problema que o software resolve e os benefícios esperados.</a>
+---
+<!--------Slide--0-5-------------------->
+<!---------Escopo do Projeto--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Escopo do Projeto
+
+<a>
+<p>- Cabeçalho com navbar</p>
+<p>- Página inicial com destaques e alguns produtos usando um script js, para transcorrer as imagens .</p>
+<p>- Formulário de newsletter para cadastro de usuário para promoções.</p>
+<p>- Dark mode.</p>
+<p>- O software terá 3 páginas-(Home/ Faq/ Produtos).</p>
+<p>- Cards que contém alguns produtos disponíveis para compra com botões que redirecionam o usuário ao WhatsApp.</p>
+<p>- Área de contato e informações da loja.</p>
+</a>
+---
+<!--------Slide--0-6-------------------->
+<!---------Descrição do Software--------------------->
+
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Descrição do Software
+<a>Visão Geral: como o software funciona e para que é destinado.
+Público-Alvo: quem são os usuários ou clientes potenciais.</a>
+---
+<!--------Slide--0-7-------------------->
+<!---------Requisitos-FUN-------------------->
+
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -55,7 +151,15 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 
+# Requisitos
+<a>Explicação rápida do Levantamento de Requisitos (LR).
+
+Requisitos Funcionais (RF): principais funcionalidades do sistema.</a>
+
 ---
+<!--------Slide--0-8-------------------->
+<!---------Requisitos--Ñ--FUN-------------------->
+
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -67,11 +171,12 @@ output:
 </div>
 <!---fim-Logos-topo-da-pagina---->
 
-<p align="center">                        <!--largura--> <!--Altura-->
-    <img src="img/tab.png" alt="Image" width="550" height="450" />
-</p>
 
+<a>Requisitos Não Funcionais (RNF): aspectos de desempenho, segurança, etc.</a>
 ---
+<!--------Slide--0-9-------------------->
+<!---------Arquitetura de Software-------------------->
+
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -83,10 +188,366 @@ output:
 </div>
 <!---fim-Logos-topo-da-pagina---->
 
-<p align="center">                        <!--largura--> <!--Altura-->
-    <img src="img/smartphone1.png" alt="Image" width="300" height="550" />
-</p>
+# Arquitetura de Software
 
+<a>Breve introdução à arquitetura usada.
+Diagramas UML: apresentar de forma visual, com os diagramas mais relevantes, como:
+Diagrama de Casos de Uso (resumir casos principais)</a>
+---
+<!--------Slide--10-01-------------------->
+<!---------Arquitetura de Software--casos-de-uso------------------>
+
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Diagrama de casos de uso
+
+<!-- Foto centralizada -->
+<div style="display: flex; margin-top: 95px; justify-content: center; align-items: center; height: 50vh;">
+  <img src="img/Foto_casos_de_uso.png" alt="Apresentação" style="width: 60%; height: auto;">
+</div>
+---
+<!--------Slide--10-02-------------------->
+<!---------Arquitetura de Software--contexto------------------>
+
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Diagrama de contexto
+
+<!-- Foto centralizada -->
+<div style="display: flex; margin-top: 180px; justify-content: center; align-items: center; height: 30vh;">
+  <img src="img/contexto.jpeg" alt="Apresentação" style="width: 33%; height: auto;">
+</div>
+---
+<!--------Slide--10-03-------------------->
+<!---------Arquitetura de Software--Sequência------------------>
+
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Diagrama de Sequência
+
+<!-- Foto centralizada -->
+<div style="display: flex; margin-top: 80px; justify-content: center; align-items: center; height: 55vh;">
+  <img src="img/Foto_diagrama_de_sequencia.png" alt="Apresentação" style="width: 80%; height: auto;">
+</div>
+---
+<!--------Slide--10-04-------------------->
+<!---------Arquitetura de Software--Atividades------------------>
+
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Diagrama de Atividade
+
+<!-- Foto centralizada -->
+<div style="display: flex; justify-content: center; align-items: center; height: 60vh;">
+  <img src="img/Foto_diagrama_de_atividades.png" alt="Apresentação" style="width: 80%; height: auto;">
+</div>
+---
+<!--------Slide--14-------------------->
+<!---------Metodologia de Desenvolvimento------------------>
+
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Metodologia Ágil ( Scrum )
+
+<!-- Foto centralizada -->
+<div style="display: flex; margin-top: 10px; justify-content: center; align-items: center; height: 60vh;">
+  <img src="img/trello.png" alt="Apresentação" style="width: 90%; height: auto;">
+</div>
+
+
+---
+<!--------Slide--15------------------->
+<!---------Metodologia de Desenvolvimento------------------>
+
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<a>Benefícios da metodologia escolhida para o projeto.</a>
+---
+<!--------Slide--16--------------------->
+<!---------Prototipação--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Prototipação
+
+# Ferramentas utilizadas para prototipagem
+<!-- GIF centralizado -->
+<div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+  <img src="img/ferramentas.png" alt="Apresentação" style="width: 60%; height: auto;">
+</div>
+---
+<!--------Slide--17--------------------->
+<!---------Prototipação--principais--telas-1------------------>
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!------------imagens----------------------->
+<div style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
+  <img src="img/index_dark.jpg" alt="Apresentação" style="width: 30%; height: auto;">
+  <img src="img/index_light.jpg" alt="Apresentação" style="width: 30%; height: auto; margin-left: 100px;">
+</div>
+
+---
+<!--------Slide--18-------------------->
+<!---------Prototipação--principais--telas-faq-fechada------------------>
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!------------imagens----------------------->
+<div style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
+  <img src="img/faq_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
+  <img src="img/faq_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
+</div>
+---
+<!--------Slide--19-------------------->
+<!---------Prototipação--principais--telas-faq-aberta------------------>
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!------------imagens----------------------->
+<div style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
+  <img src="img/faq_aberto_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
+  <img src="img/faq_aberto_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
+</div>
+---
+<!--------Slide--20-------------------->
+<!---------Prototipação--principais--telas-produtos------------------>
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 70px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 150px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!------------imagens----------------------->
+<div style="display: flex; margin-top: 170px; justify-content: center; align-items: center; height: 40vh;">
+  <img src="img/produtos_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
+  <img src="img/produtos_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
+</div>
+
+---
+<!--------Slide--21--------------------->
+<!---------Prototipação--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!-- GIF centralizado -->
+<div style="display: flex; margin-top: 120px; justify-content: center; align-items: center; height: 50vh;">
+  <img src="img/gif_apresentação.gif" alt="Apresentação" style="width: 62%; height: auto;">
+</div>
+
+---
+<!--------Slide--22--------------------->
+<!---------Codificação--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Codificação
+<a>
+Ambiente de Desenvolvimento (ferramentas, IDEs utilizadas).
+Procedimentos de Desenvolvimento: boas práticas de código, estrutura dos arquivos.</a>
+---
+<!--------Slide--23--------------------->
+<!---------Implementação--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Implementação
+
+<a>Controle de Versionamento: mencionar o uso do GitHub, principais práticas de versionamento.
+Hospedagem: descrição do processo de hospedagem no Vercel e por que ele foi escolhido.</a>
+
+---
+<!--------Slide--24--------------------->
+<!---------Plano de Testes--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Plano de Testes
+
+<a>Estratégia de Testes: testes realizados (unitários, integração, etc.).
+Casos de Teste: breve menção a alguns cenários de teste críticos..</a>
+
+---
+<!--------Slide--25--------------------->
+<!---------Implantação e Manutenção--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Implantação e Manutenção
+
+<a>Ambiente de Implantação: onde e como o software será disponibilizado.
+Procedimentos de Implantação: passos seguidos para colocar em produção.
+Plano de Manutenção e Suporte: como serão feitas as correções e atualizações.</a>
+
+---
+<!--------Slide--26--------------------->
+<!---------Evolução--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Evolução
+
+<a>Histórico de Versões: principais atualizações e melhorias.
+Plano de Evolução: novas funcionalidades planejadas para o futuro, objetivos de expansão..</a>
+
+---
+<!--------Slide--27--------------------->
+<!---------Conclusão e Próximos Passos--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+# Conclusão e Próximos Passos
+
+<a>Resumo dos principais pontos do projeto.
+Próximos passos para a evolução do software.
+Espaço para perguntas e discussão</a>
 ---
 #  Muito obrigado !
 <div style="color: black;">
@@ -106,3 +567,4 @@ output:
 <p align="center">
     <img src="img/xa.png" alt="Image" width="650" height="450" />
 </p>
+

@@ -14,19 +14,20 @@
 
 a {
   font-weight: bold;
-  color: #EE7026;
+  color: #FF4500;
   font-family: Andale Mono, monospace;
   font-size:20px;
   font-style: normal;
   text-decoration:none;
-}
+};
 p {
   font-weight: bold;
-  color: white;
+  color: black;
   font-family: Andale Mono, monospace;
   font-size:20px;
   font-style: normal;
   text-decoration:none;
 }
 h1 {font-weight: bold;  font-family: Andale Mono, monospace;}
+h2 {color: black ;font-weight: bold;  font-family: Andale Mono, monospace;}
 
