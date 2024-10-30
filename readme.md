@@ -55,10 +55,10 @@ Para o gerenciamento, do projeto, foi utilizado o [Trello,](https://trello.com/i
 
 ![](img/trello.png)
 
-<!----------
+
 # Apresentação do Projeto interdiciplinar
 
-Confira [aqui.]()---------------->
+Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
 
 ---
 
