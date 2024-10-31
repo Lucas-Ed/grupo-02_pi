@@ -44,21 +44,47 @@ output:
 
 # Colaboradores
 
-[Lucas Eduardo ](linktr.ee/lucas.007)
 
-[Renan Augusto](https://github.com/Marques894)
+<a href="https://linktr.ee/lucas.007" style="text-decoration: underline;">Lucas Eduardo</a>
+<br>
 
-[Jeferson Felipe](https://github.com/Jefferson434)
+<a href="https://github.com/Marques894" style="text-decoration: underline;">Renan Augusto</a>
+<br>
 
-[Wilson Pereira](https://github.com/willsf2021)
+<a href="https://github.com/Jefferson434" style="text-decoration: underline;">Jeferson Felipe</a>
+<br>
 
-[Bruna Ferreira](https://github.com/BFerreiraCardoso)
+<a href="https://github.com/willsf2021" style="text-decoration: underline;">Wilson Pereira</a>
+<br>
 
-[Felipe  Rocha](https://github.com/FlpRocha236)
+<a href="https://github.com/BFerreiraCardoso" style="text-decoration: underline;">Bruna Ferreira</a>
+<br>
+
+<a href="https://github.com/FlpRocha236" style="text-decoration: underline;">Felipe  Rocha</a>
+<br>
 
 ---
-<!--------Slide--0-3-------------------->
-<!---------introdução--------------------->
+<!--------Slide--03--------------------->
+<!---------site-atual-da-empresa--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!-- imagem-->
+<div style="display: flex; margin-top: 200px; justify-content: center; align-items: center; height: 30vh;">
+  <img src="./img/site_atual.png" alt="Apresentação" style="width: 55%; height: auto;">
+</div>
+
+---
+<!--------Slide--0-4-------------------->
+<!---------introdução-e-objetivo------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -72,13 +98,20 @@ output:
 
 # Introdução
 
-<a>Título do Projeto
-Objetivo da Apresentação: breve introdução sobre o que será discutido e a importância do projeto.</a>
+<h2 style="color: black;"> Nossa proposta:</h2>
+<a>- "Rebranding" do Site da Loja Casa Sônia calçados.</a>
+<br>
 
+<h2 style="color: black;"> O objetivo:</h2>
+<a>Atualizar o layout do site da empresa, promovendo uma experiência mais agradável ao cliente.</a>
+<br>
+
+<h2 style="color: black;"> O que nossa proposta resolve ?</h2>
+<a> Atualiza a imagem digital da empresa.</a>
 
 ---
-<!--------Slide--0-4-------------------->
-<!---------Objetivo--------------------->
+<!--------Slide--05--------------------->
+<!---------escopo--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -90,53 +123,36 @@ Objetivo da Apresentação: breve introdução sobre o que será discutido e a i
 </div>
 <!---fim-Logos-topo-da-pagina---->
 
-<a>Descrição breve do objetivo principal do projeto.
-Destaque: problema que o software resolve e os benefícios esperados.</a>
----
-<!--------Slide--0-5-------------------->
-<!---------Escopo do Projeto--------------------->
-<!---início-Logos-topo-da-pagina---->
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <div>
-     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
-  </div>
-  <div><!--largura-width--> <!-----Altura-height--->
-    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
-  </div>
-</div>
-<!---fim-Logos-topo-da-pagina---->
+# Escopo:
 
-# Escopo do Projeto
+<a style="color: black;">O software terá 3 páginas-(Home/ Faq/ Produtos). </a>
+<br>
 
-<a>
-<p>- Cabeçalho com navbar</p>
-<p>- Página inicial com destaques e alguns produtos usando um script js, para transcorrer as imagens .</p>
-<p>- Formulário de newsletter para cadastro de usuário para promoções.</p>
-<p>- Dark mode.</p>
-<p>- O software terá 3 páginas-(Home/ Faq/ Produtos).</p>
-<p>- Cards que contém alguns produtos disponíveis para compra com botões que redirecionam o usuário ao WhatsApp.</p>
-<p>- Área de contato e informações da loja.</p>
-</a>
+<a style="color: black;">Dark mode | Light Mode.</a>
+<br>
+
+<a style="color: black;">Cards de produtos que redirecionam o usuário para atendimento.</a>
+<br>
+
+<a style="color: black;">Formulário de newsletter para captação de Leads.</a>
+<br>
+
+<a style="color: black;">Área de contato e informações da loja.</a>
+<br>
+
+<a style="color: black;">script js, para transcorrer as imagens na página Home.</a>
+<br>
+
+<a style="color: black;">Navbar com links que redirecionam o usuário.</a>
+<br>
+
+<a style="color: black;">Seção de Marcas e História da empresa.</a>
+<br>
+
+<a style="color: black;">Drop Down na página /faq.</a>
+<a> </a>
 ---
 <!--------Slide--0-6-------------------->
-<!---------Descrição do Software--------------------->
-
-<!---início-Logos-topo-da-pagina---->
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <div>
-     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
-  </div>
-  <div><!--largura-width--> <!-----Altura-height--->
-    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
-  </div>
-</div>
-<!---fim-Logos-topo-da-pagina---->
-
-# Descrição do Software
-<a>Visão Geral: como o software funciona e para que é destinado.
-Público-Alvo: quem são os usuários ou clientes potenciais.</a>
----
-<!--------Slide--0-7-------------------->
 <!---------Requisitos-FUN-------------------->
 
 <!---início-Logos-topo-da-pagina---->
@@ -157,7 +173,7 @@ Público-Alvo: quem são os usuários ou clientes potenciais.</a>
 Requisitos Funcionais (RF): principais funcionalidades do sistema.</a>
 
 ---
-<!--------Slide--0-8-------------------->
+<!--------Slide--0-7-------------------->
 <!---------Requisitos--Ñ--FUN-------------------->
 
 <!---início-Logos-topo-da-pagina---->
@@ -174,7 +190,7 @@ Requisitos Funcionais (RF): principais funcionalidades do sistema.</a>
 
 <a>Requisitos Não Funcionais (RNF): aspectos de desempenho, segurança, etc.</a>
 ---
-<!--------Slide--0-9-------------------->
+<!--------Slide--08-------------------->
 <!---------Arquitetura de Software-------------------->
 
 <!---início-Logos-topo-da-pagina---->
@@ -194,7 +210,7 @@ Requisitos Funcionais (RF): principais funcionalidades do sistema.</a>
 Diagramas UML: apresentar de forma visual, com os diagramas mais relevantes, como:
 Diagrama de Casos de Uso (resumir casos principais)</a>
 ---
-<!--------Slide--10-01-------------------->
+<!--------Slide--09-01-------------------->
 <!---------Arquitetura de Software--casos-de-uso------------------>
 
 <!---início-Logos-topo-da-pagina---->
@@ -215,7 +231,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
   <img src="./img/Foto_casos_de_uso.png" alt="Apresentação" style="width: 60%; height: auto;">
 </div>
 ---
-<!--------Slide--10-02-------------------->
+<!--------Slide--10--------------------->
 <!---------Arquitetura de Software--contexto------------------>
 
 <!---início-Logos-topo-da-pagina---->
@@ -236,7 +252,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
   <img src="./img/contexto.jpeg" alt="Apresentação" style="width: 33%; height: auto;">
 </div>
 ---
-<!--------Slide--10-03-------------------->
+<!--------Slide--11-------------------->
 <!---------Arquitetura de Software--Sequência------------------>
 
 <!---início-Logos-topo-da-pagina---->
@@ -257,7 +273,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
   <img src="./img/Foto_diagrama_de_sequencia.png" alt="Apresentação" style="width: 80%; height: auto;">
 </div>
 ---
-<!--------Slide--10-04-------------------->
+<!--------Slide--12-------------------->
 <!---------Arquitetura de Software--Atividades------------------>
 
 <!---início-Logos-topo-da-pagina---->
@@ -278,7 +294,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
   <img src="./img/Foto_diagrama_de_atividades.png" alt="Apresentação" style="width: 80%; height: auto;">
 </div>
 ---
-<!--------Slide--14-------------------->
+<!--------Slide--13-------------------->
 <!---------Metodologia de Desenvolvimento------------------>
 
 <!---início-Logos-topo-da-pagina---->
@@ -301,7 +317,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
 
 
 ---
-<!--------Slide--15------------------->
+<!--------Slide--14------------------>
 <!---------Metodologia de Desenvolvimento------------------>
 
 <!---início-Logos-topo-da-pagina---->
@@ -317,7 +333,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
 
 <a>Benefícios da metodologia escolhida para o projeto.</a>
 ---
-<!--------Slide--16--------------------->
+<!--------Slide--15--------------------->
 <!---------Prototipação--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -338,7 +354,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
   <img src="./img/ferramentas.png" alt="Apresentação" style="width: 60%; height: auto;">
 </div>
 ---
-<!--------Slide--17--------------------->
+<!--------Slide--16--------------------->
 <!---------Prototipação--branding------------------>
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -353,11 +369,11 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
 
 <!-- Foto centralizada -->
 <div style="display: flex; margin-top: 120px; justify-content: center; align-items: center; height: 55vh;">
-  <img src="./img/Branding.svg" alt="Apresentação" style="width: 55%; height: auto;">
+  <img src="./img/branding.svg" alt="Apresentação" style="width: 55%; height: auto;">
 </div>
 
 ---
-<!--------Slide--18--------------------->
+<!--------Slide--17--------------------->
 <!---------Prototipação--principais--telas-1------------------>
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -377,7 +393,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
 </div>
 
 ---
-<!--------Slide--19-------------------->
+<!--------Slide--18-------------------->
 <!---------Prototipação--principais--telas-faq-fechada------------------>
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -396,7 +412,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
   <img src="./img/faq_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </div>
 ---
-<!--------Slide--20-------------------->
+<!--------Slide--19-------------------->
 <!---------Prototipação--principais--telas-faq-aberta------------------>
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -415,7 +431,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
   <img src="./img/faq_aberto_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </div>
 ---
-<!--------Slide--21-------------------->
+<!--------Slide--20-------------------->
 <!---------Prototipação--principais--telas-produtos------------------>
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -435,7 +451,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
 </div>
 
 ---
-<!--------Slide--22--------------------->
+<!--------Slide--21--------------------->
 <!---------Prototipação--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -454,7 +470,7 @@ Diagrama de Casos de Uso (resumir casos principais)</a>
 </div>
 
 ---
-<!--------Slide--23--------------------->
+<!--------Slide--22--------------------->
 <!---------Codificação--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -491,7 +507,7 @@ Procedimentos de Desenvolvimento: boas práticas de código, estrutura dos arqui
 Hospedagem: descrição do processo de hospedagem no Vercel e por que ele foi escolhido.</a>
 
 ---
-<!--------Slide--25--------------------->
+<!--------Slide--23--------------------->
 <!---------Plano de Testes--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -510,7 +526,7 @@ Hospedagem: descrição do processo de hospedagem no Vercel e por que ele foi es
 Casos de Teste: breve menção a alguns cenários de teste críticos..</a>
 
 ---
-<!--------Slide--26--------------------->
+<!--------Slide--24--------------------->
 <!---------Implantação e Manutenção--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -530,7 +546,7 @@ Procedimentos de Implantação: passos seguidos para colocar em produção.
 Plano de Manutenção e Suporte: como serão feitas as correções e atualizações.</a>
 
 ---
-<!--------Slide--27--------------------->
+<!--------Slide--25--------------------->
 <!---------Evolução--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -549,7 +565,7 @@ Plano de Manutenção e Suporte: como serão feitas as correções e atualizaç�
 Plano de Evolução: novas funcionalidades planejadas para o futuro, objetivos de expansão..</a>
 
 ---
-<!--------Slide--27--------------------->
+<!--------Slide--26--------------------->
 <!---------Conclusão e Próximos Passos--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -578,16 +594,25 @@ Espaço para perguntas e discussão</a>
   </div>
 </div>
 <!---fim-Logos-topo-da-pagina---->
-#  Muito obrigado !
-<div style="color: black;">
-- Informações úteis
-</div>
 
-[whatsapp](https://bit.ly/3uMmzeI)
+#  Links úteis
+
+<a href="https://www.figma.com/design/sIfEtyseMbpBPBKTnMTnAm/Casa-S%C3%B4nia-Fashion?node-id=0-88&t=xCCDPaCHfE8gytH9-1" style="text-decoration: underline;">Layout do projeto do Pi.</a>
+<br>
+
+<a href="https://trello.com/invite/b/670a36ac9fdfb633bd12bc42/ATTIc0bd37a0dad55feb71e78e437d7367886CFD379C/fatec-pi-documentacao-casa-sonia-fashion" style="text-decoration: underline;">Métodologia para gestão de tarefas do Pi.</a>
+<br>
+
+<a href="https://casasonia.com.br" style="text-decoration: underline;">Site atual da empresa..</a>
+<br>
+
+<a href="" style="text-decoration: underline;">Deploy da aplicação do projeto proposto pelo Pi.</a>
+<br>
+
+<a href="https://github.com/Lucas-Ed/grupo-02_pi" style="text-decoration: underline;">Github do grupo-02</a>
 
 
 
-[Github do grupo-02](https://github.com/Lucas-Ed/grupo-02_pi)
 
 
 ---
