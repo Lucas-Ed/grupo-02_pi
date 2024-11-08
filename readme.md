@@ -17,7 +17,7 @@ Projeto Interdisciplinar do grupo 02, do curso <a href="https://fatecararas.cps.
 
 <!-- <h3 align="center">✅ Concluído ✅</h3> -->
 
-<p align="center">
+<!-- <p align="center">
  <a href="#-Projeto">Sobre o projeto</a> •
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-layout">Layout</a> • 
@@ -25,6 +25,15 @@ Projeto Interdisciplinar do grupo 02, do curso <a href="https://fatecararas.cps.
 <a href="#-Autores ">Autores</a> •
 <a href="#-Deploy-do-projeto">Deploy</a> •
 <a href="#Licença">Licença</a>
+</p> -->
+
+<p align="center">
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-layout-do-projeto">Layout</a> • 
+ <a href="#-metodologia-ágil">Metodologia ágil</a> •
+ <a href="#autores">Autores</a> •
+ <a href="#apresentação-do-projeto-interdisciplinar">Deploy</a> •
+ <a href="#memo-licença">Licença</a>
 </p>
 
 
@@ -49,20 +58,20 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Para ver o layout completo solicite acesso [aqui.](https://www.figma.com/design/sIfEtyseMbpBPBKTnMTnAm/Casa-S%C3%B4nia-Fashion?node-id=0-88&t=xCCDPaCHfE8gytH9-1)
 
 
-## 🛠 Métodologia ágil-( Scrum ) 
+## 🛠 Metodologia ágil
 
 Para o gerenciamento, do projeto, foi utilizado o [Trello](https://trello.com/invite/b/670a36ac9fdfb633bd12bc42/ATTIc0bd37a0dad55feb71e78e437d7367886CFD379C/fatec-pi-documentacao-casa-sonia-fashion), solicite acesso para vizualizar ao quadro no link anterior;  O Trello é uma ferramenta para melhor controle e divisão de tarefas entre os autores, ficando da seguinte forma igual da imagem abaixo:
 
 ![](img/trello.png)
 
 
-# Apresentação do Projeto interdiciplinar
+## Apresentação do projeto interdiciplinar
 
 Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
 
 ---
 
-# :computer: Autores
+## Autores
 
 <table>
   <tr>
@@ -123,7 +132,7 @@ Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
         </sub>
        </a>
        <br />
-       <a href="https://www.instagram.com" title="instagram">@Jeff</a>
+       <a href="https://www.instagram.com" title="instagram"></a>
        <br />
     </td>
      <td align="center">
@@ -135,7 +144,7 @@ Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
         </sub>
        </a>
        <br />
-       <a href="https://www.instagram.com" title="instagram">@Bruna.card</a>
+       <a href="https://www.instagram.com" title="instagram"></a>
        <br />
     </td>
   </tr>

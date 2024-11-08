@@ -1,219 +1,504 @@
-:root {
-  --bgBodyDark: #333333;
-  --bgBodyLight: #dddddd;
-  --laranja: #ee7026;
-}
-
+/*Configurações padrão do body*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;/*remove a margem padrão do body*/
+  padding: 0;/*remove o padding padrão do body*/
+  box-sizing: border-box;/*ajusta o box-model para incluir padding e border no tamanho total do elemento*/
 }
 
 body {
-  font-family: "Archivo", sans-serif;
-  max-width: 1920px;
-  margin: 0 auto;
+  font-family: "Archivo", sans-serif;/*define a fonte padrão para o corpo do site*/
+  max-width: 1920px;/*define a largura máxima do site*/
+  margin: 0 auto;/*centraliza o site horizontalmente*/
+}
+/*-----------------------------*/
+/* Estilo para a logo */
+.logo img {
+  height: 70px;/*altura da logo*/
+  width: auto;/*largura automática para manter a proporção*/
+  margin-left: 50px;/*margem esquerda dos links navbar*/
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+/* Ajuste para a navbar */
+.navbar {
+  background-color: #333333;/*cor de fundo da navbar*/
+  padding: 10px 20px;/*adiciona espaçamento interno na navbar*/
+  box-shadow: 0px 2px 20px 0px var(--laranja);/*adiciona sombra na navbar*/
+}
+:root {
+  --bgBodyDark: #333333;/*cor de fundo do body*/
+  --bgBodyLight: #dddddd;
+  --laranja: #ee7026;
+}
+.navbar-nav {
+  gap: 120px;/*espaçamento entre os links navbar*/
+  margin-left: 90px;/*margem esquerda dos links navbar*/
 }
 
-ul {
-  list-style: none;
+.navbar-nav li a {
+  text-decoration: none;/*remove o sublinhado dos links*/
+  color: #f2f2f2;/*cor do texto dos links*/
+  font-family: Arial, sans-serif;/*fonte dos links*/
+  font-weight: 600;/*espessura da fonte dos links*/
+  padding: 10px;/*adiciona espaçamento interno nos links*/
 }
 
-P {
-  color: white;
+.topnav a:hover {
+  background-color: #b7b5b9;/*cor de fundo ao passar o mouse*/
+  color: black;/*cor do texto ao passar o mouse*/
+  text-decoration: none;/*remove o sublinhado ao passar o mouse*/
 }
 
-header {
-  background-color: var(--bgBodyDark);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+/* Estilo para o botão toggle */
+.toggle {
+  display: flex;/*exibe o toggle como flexível*/
+  align-items: center;/*alinha o conteúdo verticalmente*/
+  cursor: pointer;/*altera o cursor ao passar o mouse*/
 }
 
-#top-header {
-  display: flex;
-  width: 100%;
-  height: 120px;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 2px 20px 0px var(--laranja);
-  column-gap: 182px;
-  padding: 0px 240px;
-  z-index: 1;
+.toggle .label {
+  background-color: #ddd;/*cor de fundo do toggle*/
+  width: 50px;/*largura do toggle*/
+  border-radius: 25px;/*borda arredondada do toggle*/
+  padding: 5px;/*adiciona espaçamento interno no toggle*/
 }
+
+.toggle .label .box {
+  background-color: black;/*cor de fundo da box do toggle*/
+  background-image: url('./assets/toggle.svg');/*adiciona a imagem do toggle*/
+  background-size: 12px 12px;/*ajusta o tamanho da imagem do toggle*/
+  background-repeat: no-repeat;/*remove a repetição da imagem*/
+  background-position: center;/*centraliza a imagem*/
+  width: 17px;/*largura da box*/
+  height: 17px;/*altura da box*/
+  border-radius: 50%;/*borda arredondada da box*/
+  transition: transform 0.3s ease;/*adiciona uma transição suave*/
+}
+
+header .container .toggle.active .label {
+  background-color: #f9f9f9;/*altera a cor de fundo do toggle quando acionado*/
+}
+
+header .container .toggle.active .label .box {
+  transform: translateX(25px);/*move a box para a direita quando acionado*/
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: flex;/*exibe o menu hamburguer como flexível*/
+    justify-content: center;/*alinha o conteúdo horizontalmente*/
+    align-items: center;/*alinha o conteúdo verticalmente*/
+    position: absolute;/*posiciona o menu hamburguer de forma absoluta*/
+    top: 50px; /* Ajuste a partir do topo, abaixo do header */
+    left: 50%;/*centraliza o menu hamburguer horizontalmente*/
+    transform: translateX(-50%);/*ajusta o menu hamburguer para o centro exato*/
+    width: 100%; /* Reduz a largura do menu */
+    max-height: 330px; /* Limita a altura do menu */
+    background-color: #333333;/*cor de fundo do menu hamburguer*/
+    z-index: 10;/*posiciona o menu hamburguer acima dos outros elementos*/
+    opacity: 0;/*define a opacidade do menu hamburguer como 0*/
+    visibility: hidden;/*oculta o menu hamburguer*/
+    transition: opacity 0.3s ease, visibility 0.3s ease;/*adiciona uma transição suave*/
+    /* border-radius: 8px; Adiciona bordas arredondadas */
+    padding: 30px;/*adiciona espaçamento interno no menu hamburguer*/
+  }
+
+  .navbar-collapse.show {
+    opacity: 1;/*altera a opacidade do menu hamburguer para 1*/
+    visibility: visible;/*exibe o menu hamburguer*/
+  }
+
+  /* Ajuste do estilo dos itens do menu para centralizar */
+  .navbar-nav {
+    display: flex;/*exibe os links do menu como flexível*/
+    flex-direction: column;/*alinha os links do menu em coluna*/
+    gap: 20px;/*espaçamento entre os links do menu*/
+    text-align: center;/*centraliza o texto dos links do menu*/
+    margin-left: 10px;/*margem esquerda dos links navbar*/
+  }
+
+  .navbar-nav li a {
+    font-size: 1.2rem;/*tamanho da fonte dos links do menu hamburguer*/
+  }
+
+  /* Estilo do botão hamburguer */
+  .navbar-toggler {
+    /* color: #EE7026;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    color: #EE7026; /* Define a cor do botão */
+    display: block; /* Exibe o botão como bloco */
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    left: 50%; /* Centraliza o botão horizontalmente */
+    transform: translateX(-50%); /* Ajusta o botão para o centro exato */
+  }
+  /* Estilo de cor interna, específico para o ícone interno do hamburguer */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23EE7026' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /*altera a cor do ícone hamburguer*/
+}
+  /* Estilo para a logo */
+.logo img {
+  height: 30px;/*altura da logo*/
+  width: auto;/*largura automática para manter a proporção*/
+  margin-right: 20px;/*margem esquerda dos links navbar*/
+}
+}
+/*----------------------------carousel---------------------------*/
+/* Mantendo suas classes de background */
 
 .bg1 {
-  background: url("assets/backgroundheader1.png");
+  background: url("assets/backgroundheader1.png");/*adiciona a imagem de fundo*/
   /* transition: all 3ms ease; */
 }
-
 .bg2 {
-  background: url("assets/backgroundheader2.png");
+  background: url("assets/backgroundheader2.png");/*adiciona a imagem de fundo*/
   /* transition: all 3ms ease; */
 }
 
 .bg3 {
-  background: url("assets/backgroundheader3.png");
+  background: url("assets/backgroundheader3.png");/*adiciona a imagem de fundo*/
   /* transition: all 3ms ease; */
 }
 
+
+/* 
+classe se usar o bootstrap para responsividade, mas ainda não esta 100%
+.bg1 {
+  background: url("assets/backgroundheader1.png") no-repeat center center;
+  background-size: cover;
+  height: 300px; 
+  transition: background-image 0.3s ease-in-out;
+}
+
+
+.bg2 {
+  background: url("assets/backgroundheader2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.bg3 {
+  background: url("assets/backgroundheader3.png") no-repeat center center;
+  background-size: cover;
+} */
 #bottom-header {
-  height: 436px;
-  background-position: center;
-  z-index: 0;
+  height: 436px;/*altura do header*/
+  background-position: center;/*centraliza a imagem de fundo*/
+  z-index: 0;/*posiciona o header abaixo dos outros elementos*/
+}
+/*--------------------Classes-light-mode----------------------------------*/
+/* Classe para Modo Claro */
+/* Modo Claro */
+.light-mode main {
+  background-color: var(--bgBodyLight);/*cor de fundo do body no modo claro*/
 }
 
-nav {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
+.light-mode .navbar {
+  background-color: #DDDDDD;/*cor de fundo da navbar no modo claro*/
 }
 
-nav ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  font-size: 20px;
-  padding: 8px;
+.light-mode .toggle .label {
+  background-color: #333333; /* Fundo do toggle ajustado */
 }
 
-#buttonHeader {
-  font-size: 8px;
+.light-mode .toggle .label .box {
+  background-color: #DDDDDD; /*Altera o background do Toggle quando acionado*/
+  background-image: url('./assets/toggle_light.svg');/*Altera a imagem do Toggle quando acionado*/
+  transform: translateX(25px); /* Move a box para a direita no modo claro */
 }
 
-#logo {
-  img {
-    width: 60px;
+.light-mode .navbar-nav li a {
+  color: #333333; /*Altera a cor dos links do navbar quando acionado*/
+}
+/* Regras para o menu hamburguer em modo claro e tela pequena */
+@media (max-width: 768px) {
+  .light-mode .navbar-collapse.show {
+      background-color: #DDDDDD;/*Altera o background do menu hamburguer quando acionado*/
+  }
+
+  .light-mode .navbar-collapse.show .navbar-nav li a {
+      color: #333333; /*Altera a cor dos links do menu hamburguer quando acionado*/
   }
 }
 
+.light-mode p { /* alttera a cor do texto da tag p, da seção história quando o Toggle estiver acionado*/
+  color:#333333
+}
+
+.light-mode .text-container h3 {
+  color: #333333;
+}
+
+/*Altera a imagem das marcas no modo light*/
+
+/* Modo padrão (imagens escuras) */
+
+
+/* Modo claro (light-mode) */
+.light-mode .img-nike {
+  content: url("assets/dark_nike.svg");/*altera a imagem da marca Nike*/
+}
+
+.light-mode .img-adidas {
+  content: url("assets/dark_adidas.svg");/*altera a imagem da marca Adidas*/
+}
+
+.light-mode .img-puma {
+  content: url("assets/dark_puma.svg");/*altera a imagem da marca Puma*/
+}
+
+.light-mode .img-lacoste {
+  content: url("assets/dark_lacoste.svg");/*altera a imagem da marca Lacoste*/
+}
+
+.light-mode .img-mizuno {
+  content: url("assets/dark_mizuno.svg");/*altera a imagem da marca Mizuno*/
+}
+
+.light-mode .img-newbalance {
+  content: url("assets/dark_newbalace.svg");/*altera a imagem da marca New Balance*/
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*seção história*/
 main {
   background-color: var(--bgBodyDark);
-  padding-top: 150px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 200px;
+  padding-top: 150px;/*adiciona espaçamento superior*/
+  display: flex;/*exibe o conteúdo como flexível*/
+  flex-direction: column;/*alinha o conteúdo em coluna*/
+  row-gap: 200px;/*espaçamento entre as seções*/
 }
 
 #historia {
-  display: flex;
-  flex-direction: column;
-  row-gap: 50px;
-  height: auto;
+  display: flex;/*exibe a seção história como flexível*/
+  flex-direction: column;/*alinha a seção história em coluna*/
+  row-gap: 50px;/*espaçamento entre os elementos*/
+  height: auto;/*altura automática*/
 
   #texto-historia {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    align-items: center;
+    display: flex;/*exibe o texto da história como flexível*/
+    flex-direction: column;/*alinha o texto da história em coluna*/
+    row-gap: 40px;/*espaçamento entre os elementos*/
+    align-items: center;/*alinha o texto da história horizontalmente*/
   }
 
   p {
-    max-width: 1140px;
-    line-height: 150%;
-    text-align: center;
+    max-width: 1140px;/*largura máxima do texto da história*/
+    line-height: 150%;/*altura da linha do texto da história*/
+    text-align: center;/*alinha o texto da história centralizado*/
   }
 }
-
+P {
+  color: white;/*cor do texto da história*/
+}
 .sectionTitle {
-  font-size: 32px;
-  font-weight: normal;
-  color: var(--laranja);
-  text-align: center;
+  font-size: 32px;/*tamanho da fonte do título da seção*/
+  font-weight: normal;/*espessura da fonte do título da seção*/
+  color: var(--laranja);/*cor do título da seção*/
+  text-align: center;/*alinha o título da seção centralizado*/
   span {
-    padding-top: 4px;
-    border-top: 1px solid var(--laranja);
+    padding-top: 4px;/*espaçamento superior*/
+    border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
   }
 }
+
+/*-----------------------------------------------------------------------------------*/
+/* Seção Marcas */
 #marcas {
-  margin: 0 auto;
-  width: 1140px;
-
-  .text-container {
-    max-width: 764px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* width: 1140px; */
-
-    h3 {
-      color: white;
-      font-weight: 600;
-      font-size: 20px;
-      width: 100%;
-      line-height: 125%;
-    }
-
-    p {
-      line-height: 150%;
-      font-size: 16px;
-      text-align: left;
-    }
-  }
+  margin: 0 auto; /* Centraliza a seção horizontalmente */
+  width: 70%; /* Define a largura da seção para ocupar toda a largura do contêiner pai */
+  max-width: 1140px; /* Limita a largura máxima para 100%, evitando ultrapassar a tela */
 }
 
-.container {
-  margin: 55px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  column-gap: 36px;
-  flex: 1;
-  width: 100%;
-  height: 150px;
+.marca-container {
+  display: flex; /* Define um contêiner flexível para organizar os elementos */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza os elementos da coluna horizontalmente */
+  text-align: center; /* Centraliza o texto horizontalmente dentro do contêiner */
+}
+
+.container-marcas {
+  margin: 55px 0px;/*adiciona margem superior e inferior*/
+  display: flex;/*exibe o contêiner de marcas como flexível*/
+  align-items: center;/*alinha os elementos verticalmente*/
+  justify-content: flex-start;/*alinha os elementos horizontalmente*/
+  column-gap: 36px;/*espaçamento entre os elementos*/
+  flex: 1;/*define o contêiner de marcas como flexível*/
+  width: 100%;/*largura total do contêiner*/
+  height: 150px;/*altura fixa de 150px*/
+  margin-left: -100px;/*margem esquerda do contêiner de marcas*/
   img {
-    width: 150px;
+    width: 150px;/*largura da imagem*/
   }
 }
 .container-left {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  column-gap: 36px;
-  flex: 1;
-  width: 100%;
-  height: 150px;
+  display: flex;/*exibe o contêiner da esquerda como flexível*/
+  align-items: center;/*alinha os elementos verticalmente*/
+  justify-content: flex-end;/*alinha os elementos horizontalmente*/
+  column-gap: 36px;/*espaçamento entre os elementos*/
+  flex: 1;/*define o contêiner da esquerda como flexível*/
+  width: 100%;/*largura total do contêiner*/
+  height: 150px;/*altura fixa de 150px*/
+  margin-left: 85px;/*margem esquerda do contêiner da esquerda*/
   img {
-    width: 150px;
+    width: 150px;/*largura da imagem*/
   }
 }
 
-#slider {
-  display: flex;
-  justify-content: space-around;
-  width: 1440px;
-  margin: auto;
-  position: relative;
+.text-container {
+  max-width: 764px;  /*Define uma largura máxima para o contêiner de texto */
+  height: 150px; /* Altura fixa de 150px */
+  display: flex; /* Define um contêiner flexível para o texto */
+  flex-direction: column;  /* Alinhar o conteúdo em coluna */
+  justify-content: center; /*Centraliza o conteúdo dentro do contêiner*/
+
+  /*border: 2px solid violet;*/
+
+
 }
 
+.text-container h3 {
+  color: white; /* Define a cor do texto como branco */
+  font-weight: 600; /* Aplica uma fonte semi-negrito */
+  font-size: 20px; /* Define o tamanho da fonte */
+  width: 100%; /* Define a largura do título para 100% do contêiner */
+  line-height: 125%; /* Define a altura da linha para melhorar o espaçamento */
+}
+
+.text-container p {
+  line-height: 150%; /* Define uma altura de linha maior para melhor legibilidade */
+  font-size: 16px; /* Tamanho da fonte para o parágrafo */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+  .container-marcas{
+    height: auto;/*altura automática*/
+    position: relative; /* Define o contêiner como relativo para posicionar a imagem como overlay */
+    flex-direction: column; /* Muda o layout para coluna no mobile */
+    align-items: center; /* Centraliza os elementos no contêiner */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    height: auto; /* Altura automática para ajuste de conteúdo */
+    padding: 40px 0; /* Espaçamento interno para separação entre blocos */
+    text-align: center; /* Centraliza o texto */
+    margin-left: 25px;/*margem esquerda do contêiner de marcas*/
+    padding-bottom: 150px;/*adiciona espaçamento inferior*/
+  }
+
+
+  .container-left {
+    position: relative; /* Define o contêiner como relativo para posicionar a imagem como overlay */
+    flex-direction: column; /* Muda o layout para coluna no mobile */
+    align-items: center; /* Centraliza os elementos no contêiner */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    height: auto; /* Altura automática para ajuste de conteúdo */
+    padding: 40px 0; /* Espaçamento interno para separação entre blocos */
+    text-align: center; /* Centraliza o texto */
+    margin-left: 25px;/*margem esquerda do contêiner de marcas*/
+    padding-bottom: 150px;/*adiciona espaçamento inferior*/
+    /* gap: 80px; */
+
+  }
+
+  .container-marcas img,
+  .container-left img {
+    width: 75%; /* A imagem ocupa 75% da largura do contêiner */
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    opacity: 0.1; /* Reduz a opacidade da imagem para que funcione como fundo */
+    position: absolute; /* Posicionamento absoluto para sobrepor a imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste de posição para centralização exata */
+    z-index: 1; /* Coloca a imagem abaixo do texto */
+    
+  }
+
+  .text-container {
+    position: relative; /* Posiciona o contêiner de texto relativo à imagem */
+    z-index: 2; /* Garante que o texto esteja acima da imagem */
+    max-width: auto; /* Limita a largura do texto para caber na tela */
+    padding: 80px; /* Adiciona espaçamento interno ao contêiner de texto */
+    color: white; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto no contêiner */
+    border-radius: 8px; /* Bordas arredondadas para o contêiner */
+    padding: 10px; /* Aumenta o padding para melhor espaçamento */
+  }
+
+  .text-container h3 {
+    font-size: 24px; /* Aumenta o tamanho da fonte do título para mobile */
+    margin-bottom: 10px; /* Espaçamento inferior para separar do parágrafo */
+  }
+
+  .text-container p {
+    font-size: 16px; /* Tamanho da fonte para o parágrafo no mobile */
+    line-height: 1.5; /* Altura de linha ajustada para leitura confortável */
+    padding-left: 10px; /* Espaço à esquerda para separar do contêiner */
+  }
+
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Seção Vitrine */
+#slider {
+  display: flex;/*exibe o slider como flexível*/
+  justify-content: space-around;/*alinha o conteúdo horizontalmente*/
+  width: 1440px;/*largura do slider*/
+  margin: auto;/*centraliza o slider horizontalmente*/
+  position: relative;/*posiciona o slider de forma relativa*/
+}
 #list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: flex;
-  width: max-content;
-  column-gap: 500px;
+  position: absolute;/*posiciona a lista de imagens de forma absoluta*/
+  top: 0;/*posiciona a lista de imagens no topo*/
+  left: 0;/*posiciona a lista de imagens à esquerda*/
+  height: 100%;/*altura de 100%*/
+  display: flex;/*exibe a lista de imagens como flexível*/
+  width: max-content;/*largura máxima*/
+  column-gap: 500px;/*espaçamento entre as imagens*/
 }
 
 .group {
-  width: 1300px;
-  max-width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  object-fit: cover;
+  width: 1300px;/*largura do grupo de imagens*/
+  max-width: 100vw;/*largura máxima de 100vw*/
+  height: 100%;/*altura de 100%*/
+  display: flex;/*exibe o grupo de imagens como flexível*/
+  justify-content: space-between;/*alinha o conteúdo horizontalmente*/
+  object-fit: cover;/*ajusta a imagem para cobrir o contêiner*/
 }
 
 .pictureContainer img {
-  width: 333px;
+  width: 333px;/*largura da imagem*/
 }
+
+/* Carousel */
+.sectionTitle-vitrine {
+  font-size: 32px;/*tamanho da fonte do título da seção*/
+  font-weight: normal;/*espessura da fonte do título da seção*/
+  color: var(--laranja);/*cor do título da seção*/
+  text-align: center;/*alinha o título da seção centralizado*/
+  margin-left: 45%;/*margem esquerda do título da seção*/
+  span {
+    padding-top: 4px;/*espaçamento superior*/
+    border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
+  }
+}
+
+.carousel-vitrine {
+  margin-top: 100px;/*adiciona margem superior*/
+  margin-left: -200px;/*margem esquerda do carousel*/
+}
+
+.carousel-item img {
+  object-fit: cover;/*ajusta a imagem para cobrir o contêiner*/
+  height: auto; /* Remove fixed height */
+}
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+  .carousel-vitrine {
+    margin-left: -180px;/*margem esquerda do carousel*/
+  }
+}
+
+
