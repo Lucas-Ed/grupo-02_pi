@@ -31,6 +31,7 @@ Projeto Interdisciplinar do grupo 02, do curso <a href="https://fatecararas.cps.
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-layout-do-projeto">Layout</a> • 
  <a href="#-metodologia-ágil">Metodologia ágil</a> •
+ <a href="#-Api ">Api</a> •
  <a href="#autores">Autores</a> •
  <a href="#apresentação-do-projeto-interdisciplinar">Deploy</a> •
  <a href="#memo-licença">Licença</a>
@@ -63,6 +64,9 @@ Para ver o layout completo solicite acesso [aqui.](https://www.figma.com/design/
 Para o gerenciamento, do projeto, foi utilizado o [Trello](https://trello.com/invite/b/670a36ac9fdfb633bd12bc42/ATTIc0bd37a0dad55feb71e78e437d7367886CFD379C/fatec-pi-documentacao-casa-sonia-fashion), solicite acesso para vizualizar ao quadro no link anterior;  O Trello é uma ferramenta para melhor controle e divisão de tarefas entre os autores, ficando da seguinte forma igual da imagem abaixo:
 
 ![](img/trello.png)
+
+## 🧩 Api 
+Foi construída uma API para o projeto em NodeJs, acesse [aqui](https://github.com/Lucas-Ed/Backend_grupo02_pi), o repositório da Api, para mais informações.
 
 
 ## Apresentação do projeto interdiciplinar
