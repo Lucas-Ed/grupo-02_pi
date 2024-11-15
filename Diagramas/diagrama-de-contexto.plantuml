@@ -1,0 +1,19 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+!include FONTAWESOME/firefox_browser.puml
+!include FONTAWESOME/aws.puml
+
+Person(user, "Usuário", "Responsável por se inscrever na newsletter")
+System_Boundary(c1, "Contexto do sistema de inscrição na newsletter") {
+  System(web, "Sistema WEB para inscrição na newsletter", "Sistema web responsável por gerenciar as inscrições na newsletter")
+  System(api, "API de Inscrição", "API responsável por processar as inscrições na newsletter")
+}
+
+Rel(user, web, "Acessa e envia dados de inscrição")
+Rel(web, api, "Solicita cadastro do usuário")
+Rel(api, web, "Retorna mensagem de sucesso ou erro")
+
+SHOW_LEGEND()
+@enduml
