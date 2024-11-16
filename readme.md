@@ -73,6 +73,8 @@ Foi construída uma API para o projeto em NodeJs, acesse [aqui](https://github.c
 
 Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
 
+Acesse a documentação do projeto [aqui.](https://github.com/Lucas-Ed/grupo-02_pi/blob/main/Documentação/PI%20-%20Documentação.pdf)
+
 ---
 
 ## Autores
