@@ -215,9 +215,9 @@ output:
 # Requisitos Não Funcionais
 
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: -60px;  justify-content: center; align-items: center; height: 60vh;">
+<p align="center" >
   <img src="./img/RN_01.PNG" alt="Apresentação" style="width: 80%; height: auto;">
-</div>
+</p>
 ---
 <!--------Slide--10-------------------->
 <!---------Arquitetura de Software-------------------->
@@ -451,7 +451,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<p align="center" style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
+<p align="center" style="display: flex;  justify-content: center;">
   <img src="./img/faq_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
   <img src="./img/faq_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </p>
@@ -470,7 +470,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<p align="center" style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
+<p align="center" style="display: flex;  justify-content: center;">
   <img src="./img/faq_aberto_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
   <img src="./img/faq_aberto_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </p>
@@ -489,7 +489,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<p align="center" style="display: flex; margin-top: 180px; justify-content: center; align-items: center; height: 40vh;">
+<p align="center" style="display: flex;  justify-content: center; align-items: center;">
   <img src="./img/produtos_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
   <img src="./img/produtos_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </p>
@@ -509,7 +509,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!-- GIF centralizado -->
-<p align="center" 
+<p align="center" >
   <img src="./img/gif_apresentação.gif" alt="Apresentação" style="width: 62%; height: auto;">
 </p>
 
