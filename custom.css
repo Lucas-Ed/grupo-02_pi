@@ -31,3 +31,57 @@ p {
 h1 {font-weight: bold;  font-family: Andale Mono, monospace;}
 h2 {color: black ;font-weight: bold;  font-family: Andale Mono, monospace;}
 
+.container {
+
+}
+
+
+.slide_05{
+  
+}
+
+.slide_06{
+  margin-top: 60px;
+}
+/* custom.css */
+@media (max-width: 1029px) {
+  .slide_05{
+  margin-top: 40px;
+}
+}
+
+/*
+3- style="  display: flex; margin-top: 160px; justify-content: center; align-items: center; height: 30vh;"
+
+5- style="display: flex; margin-top: 35px;  justify-content: center; align-items: center; height: 50vh;"
+6- style="display: flex; margin-top: -30px;  justify-content: center; align-items: center; height: 50vh;"
+
+7- style="display: flex; margin-top: -50px;  justify-content: center; align-items: center; height: 60vh;"
+
+8- style="display: flex; margin-top: 0px;  justify-content: center; align-items: center; height: 60vh;"
+
+11- style="display: flex; margin-top: 80px; justify-content: center; align-items: center; height: 50vh;"
+
+12- style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 30vh;"
+
+13- style="display: flex; margin-top: 60px; justify-content: center; align-items: center; height: 55vh;"
+
+14- style="display: flex; margin-top: 40px; justify-content: center; align-items: center; height: 60vh;"
+
+15- style="display: flex; margin-top: 30px; justify-content: center; align-items: center; height: 60vh;"
+
+16- style="display: flex; margin-top: 30px; justify-content: center; align-items: center; height: 60vh;"
+
+17-  style="display: flex; margin-top: -40px; justify-content: center; align-items: center; height: 50vh;"
+
+18- style="display: flex; margin-top: 90px; justify-content: center; align-items: center; height: 55vh;"
+
+19- style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;"
+
+
+20- style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;"
+
+23- style="display: flex; margin-top: 130px; justify-content: center; align-items: center; height: 50vh;"
+
+*/
+
