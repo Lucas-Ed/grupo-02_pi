@@ -29,7 +29,7 @@ output:
 
 ---
 <!--------Slide--0-2-------------------->
-<!---------Colaboradores--------------------->
+<!---------Integrantes--------------------->
 
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -107,7 +107,7 @@ output:
 <br>
 
 <h2 style="color: black;"> O que nossa proposta resolve ?</h2>
-<a> Atualiza a imagem digital da empresa.</a>
+<a> Atualização da imagem digital da Empresa.</a>
 
 ---
 <!--------Slide--05--------------------->
@@ -127,7 +127,7 @@ output:
 
 <p><h3 style="color: black;">Estrutura e Funcionalidades de Interfaces</h3></p>
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: -30px;  justify-content: center; align-items: center; height: 50vh;">
+<div style="display: flex; margin-top: 35px;  justify-content: center; align-items: center; height: 50vh;">
   <img src="./img/escopo1.PNG" alt="Apresentação" style="width: 80%; height: auto;">
 </div>
 
@@ -263,7 +263,7 @@ output:
 # Diagrama de casos de uso
 
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: 5px; justify-content: center; align-items: center; height: 50vh;">
+<div style="display: flex; margin-top: 80px; justify-content: center; align-items: center; height: 50vh;">
   <img src="./img/Foto_casos_de_uso.png" alt="Apresentação" style="width: 60%; height: auto;">
 </div>
 ---
@@ -284,7 +284,7 @@ output:
 # Diagrama de contexto
 
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: 100px; justify-content: center; align-items: center; height: 30vh;">
+<div style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 30vh;">
   <img src="./img/contexto.jpeg" alt="Apresentação" style="width: 33%; height: auto;">
 </div>
 ---
@@ -305,7 +305,7 @@ output:
 # Diagrama de Sequência
 
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: -30px; justify-content: center; align-items: center; height: 55vh;">
+<div style="display: flex; margin-top: 60px; justify-content: center; align-items: center; height: 55vh;">
   <img src="./img/Foto_diagrama_de_sequencia.png" alt="Apresentação" style="width: 80%; height: auto;">
 </div>
 ---
@@ -326,7 +326,7 @@ output:
 # Diagrama de Atividade
 
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: -60px; justify-content: center; align-items: center; height: 60vh;">
+<div style="display: flex; margin-top: 40px; justify-content: center; align-items: center; height: 60vh;">
   <img src="./img/Foto_diagrama_de_atividades.png" alt="Apresentação" style="width: 80%; height: auto;">
 </div>
 ---
@@ -347,7 +347,7 @@ output:
 # Metodologia Ágil ( Scrum )
 
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: -100px; justify-content: center; align-items: center; height: 60vh;">
+<div style="display: flex; margin-top: 30px; justify-content: center; align-items: center; height: 60vh;">
   <img src="./img/trello.png" alt="Apresentação" style="width: 90%; height: auto;">
 </div>
 
@@ -368,6 +368,14 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <a>Benefícios da metodologia escolhida para o projeto.</a>
+<br>
+
+<!-- Foto centralizada -->
+<div style="display: flex; margin-top: 30px; justify-content: center; align-items: center; height: 60vh;">
+  <img src="./img/beneficios.PNG" alt="Apresentação" style="width: 90%; height: auto;">
+</div>
+
+
 ---
 <!--------Slide--17--------------------->
 <!---------Prototipação--------------------->
@@ -404,7 +412,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!-- Foto centralizada -->
-<div style="display: flex; margin-top: 30px; justify-content: center; align-items: center; height: 55vh;">
+<div style="display: flex; margin-top: 90px; justify-content: center; align-items: center; height: 55vh;">
   <img src="./img/branding.svg" alt="Apresentação" style="width: 55%; height: auto;">
 </div>
 
@@ -423,7 +431,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<div style="display: flex; margin-top: 90px; justify-content: center; align-items: center; height: 40vh;">
+<div style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
   <img src="./img/index_dark.jpg" alt="Apresentação" style="width: 30%; height: auto;">
   <img src="./img/index_light.jpg" alt="Apresentação" style="width: 30%; height: auto; margin-left: 100px;">
 </div>
@@ -443,7 +451,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<div style="display: flex; margin-top: 20px; justify-content: center; align-items: center; height: 40vh;">
+<div style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
   <img src="./img/faq_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
   <img src="./img/faq_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </div>
@@ -462,7 +470,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<div style="display: flex; margin-top: 30px; justify-content: center; align-items: center; height: 40vh;">
+<div style="display: flex; margin-top: 150px; justify-content: center; align-items: center; height: 40vh;">
   <img src="./img/faq_aberto_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
   <img src="./img/faq_aberto_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </div>
@@ -481,7 +489,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<div style="display: flex; margin-top: 100px; justify-content: center; align-items: center; height: 40vh;">
+<div style="display: flex; margin-top: 180px; justify-content: center; align-items: center; height: 40vh;">
   <img src="./img/produtos_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
   <img src="./img/produtos_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </div>
@@ -501,7 +509,7 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!-- GIF centralizado -->
-<div style="display: flex; margin-top: 30px; justify-content: center; align-items: center; height: 50vh;">
+<div style="display: flex; margin-top: 130px; justify-content: center; align-items: center; height: 50vh;">
   <img src="./img/gif_apresentação.gif" alt="Apresentação" style="width: 62%; height: auto;">
 </div>
 
@@ -540,11 +548,12 @@ output:
 
 # Plano de Testes
 
-<a>Estratégia de Testes: testes realizados (unitários, integração, etc.).
-Casos de Teste: breve menção a alguns cenários de teste críticos..</a>
+<p align="center">
+    <img src="img/plano_testes.PNG" alt="Image" width="550" height="350 " />
+</p>
 
 ---
-<!--------Slide--24--------------------->
+<!--------Slide--26--------------------->
 <!---------Implantação e Manutenção--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -557,14 +566,54 @@ Casos de Teste: breve menção a alguns cenários de teste críticos..</a>
 </div>
 <!---fim-Logos-topo-da-pagina---->
 
-# Implantação e Manutenção
+# Manutenção
 
-<a>Ambiente de Implantação: onde e como o software será disponibilizado.
-Procedimentos de Implantação: passos seguidos para colocar em produção.
-Plano de Manutenção e Suporte: como serão feitas as correções e atualizações.</a>
+<h2 style="color: black;"> Plano de manutenção:</h2>
+<a> Frequência Mensal</a>
+<br>
+<a> - Verificação de atualizações de segurança nas bibliotecas utilizadas..</a>
+<br>
+<a> - Análise de desempenho da aplicação para identificar possíveis melhorias. </a>
+<br>
+<a> - Atualização de Backup do banco de dados.</a>
+<br>
+<h2 style="color: black;"> Manutenção Corretiva:</h2>
+<a> Frequência Sob Demanda.</a>
+<br>
+<a> - Correção de bugs e erros reportados pelos usuários, como links quebrados ou formulários com problemas.</a>
+<br>
+<a> - Ajustes de layout, como problemas com a navbar, dark mode, ou problemas de exibição no carrossel de produtos.  </a>
+<br>
+<a> - Teste de compatibilidade com novos navegadores e versões de navegadores existentes.</a>
+<br>
 
 ---
-<!--------Slide--25--------------------->
+<!--------Slide--27--------------------->
+<!---------Plano de suporte--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<h1 style="color: black;">Plano de suporte:</h1>
+
+<br>
+<a> - Canais de Suporte: Chat direto via WhatsApp.</a>
+<br>
+<br>
+<a> - Disponibilidade: Horário comercial. </a>
+<br>
+<br>
+<a> - Equipe responsável, equipe de desenvolvimento e manutenção do site. </a>
+
+---
+<!--------Slide--28--------------------->
 <!---------Evolução--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -579,29 +628,23 @@ Plano de Manutenção e Suporte: como serão feitas as correções e atualizaç�
 
 # Evolução
 
-<a>Histórico de Versões: principais atualizações e melhorias.
-Plano de Evolução: novas funcionalidades planejadas para o futuro, objetivos de expansão..</a>
+<h2 style="color: black;"> Plano de evolução:</h2>
+<p style="color: black;">O plano de evolução incluí futuras melhorias e funcionalidades adicionais, como:</p>
+<br>
+<a> - Formulário de busca de produtos.</a>
+<br>
+<br>
+<a> - Implementação de um sistema de e-commerce.</a>
+<br>
+<br>
+<a> - Sugestão de compras de acordo com produtos já adquiridos pelo cliente. </a>
+<br>
+<br>
+<a> - Adição de novas categorias de produtos conforme a demanda. </a>
 
 ---
-<!--------Slide--26--------------------->
-<!---------Conclusão e Próximos Passos--------------------->
-<!---início-Logos-topo-da-pagina---->
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <div>
-     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
-  </div>
-  <div><!--largura-width--> <!-----Altura-height--->
-    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
-  </div>
-</div>
-<!---fim-Logos-topo-da-pagina---->
-
-# Conclusão e Próximos Passos
-
-<a>Resumo dos principais pontos do projeto.
-Próximos passos para a evolução do software.
-Espaço para perguntas e discussão</a>
----
+<!--------Slide-29-------->
+<!-------Links-------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -621,19 +664,25 @@ Espaço para perguntas e discussão</a>
 <a href="https://trello.com/invite/b/670a36ac9fdfb633bd12bc42/ATTIc0bd37a0dad55feb71e78e437d7367886CFD379C/fatec-pi-documentacao-casa-sonia-fashion" style="text-decoration: underline;">Métodologia para gestão de tarefas do Pi.</a>
 <br>
 
-<a href="https://casasonia.com.br" style="text-decoration: underline;">Site atual da empresa..</a>
+<a href="https://casasonia.com.br" style="text-decoration: underline;">Site atual da empresa.</a>
 <br>
-
+<br>
 <a href="" style="text-decoration: underline;">Deploy da aplicação do projeto proposto pelo Pi.</a>
 <br>
-
+<br>
+<a href="#" style="text-decoration: underline;">Deploy da Api.</a>
+<br>
+<br>
 <a href="https://github.com/Lucas-Ed/grupo-02_pi" style="text-decoration: underline;">Github do grupo-02</a>
-
-
+<br>
+<br>
+<a href="https://github.com/Lucas-Ed/grupo-02_pi/blob/main/Documentação/PI%20-%20Documentação.pdf" style="text-decoration: underline;">Documentação </a>
 
 
 
 ---
+<!--------Slide-30------>
+<!----Tecnologias da Apn-------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
@@ -645,9 +694,24 @@ Espaço para perguntas e discussão</a>
 </div>
 <!---fim-Logos-topo-da-pagina---->
 
-### Tecnologias utilizadas para esta apresentação: 
+<h2  style="color: black;"> Tecnologias utilizadas para esta apresentação: </h2>
 
 <p align="center">
     <img src="img/xa.png" alt="Image" width="650" height="450" />
 </p>
+---
+<!--------Slide--31--------------------->
+<!---------Perguntas--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<h1 style=" margin-left: 250px; margin-top: 250px;"> Perguntas ???</h1> 
 
