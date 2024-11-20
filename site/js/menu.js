@@ -20,22 +20,3 @@ closeMenuIcon.addEventListener('click', () => {
     closeMenuIcon.classList.add('hidden');
     openMenuIcon.classList.remove('hidden');
 });
-
-
-// função do toggle
-// function toggleTheme() {
-//     const toggle = document.querySelector('.toggle');
-//     const body = document.querySelector('body');
-    
-//     toggle.classList.toggle('active');
-//     body.classList.toggle('light-mode'); // Aplica o tema claro ao body
-// }
-
-function toggleTheme() {
-    const body = document.querySelector('body');
-    
-    // Alterna a classe .light-mode no <body>
-    body.classList.toggle('light-mode'); 
-}
-
-

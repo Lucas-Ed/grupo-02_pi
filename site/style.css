@@ -337,6 +337,11 @@ classe se usar o bootstrap para responsividade, mas ainda não esta 100%
 .light-mode #contatos a {
   color: var(--bgBodyDark);/*altera a cor do texto dos links da sessão contato*/
 }
+
+
+.light-mode .newsletterInput {
+        color: var(--bgBodyDark)!important;/*altera a cor do texto do input da newsletter*/
+}
 /*-----------------------------------------------------------------------------------*/
 /*seção história*/
 main {
@@ -696,7 +701,7 @@ margin-top: 55px;
     padding-left: 14px;
     font-size: 16px;
     font-family: "Archivo", sans-serif;
-    color: var(--bgBodyDark);
+    color: var(--bgBodyLight)!important;
     outline: none;
     transition: border-color 0.3s;
 }
