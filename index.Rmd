@@ -240,11 +240,11 @@ output:
 <br>
 <a> - Casos de uso</a>
 <br>
-<a> - Casos de Contexto</a>
+<a> - Contexto</a>
 <br>
-<a> - Casos de Sequência</a>
+<a> - Sequência</a>
 <br>
-<a> - Casos de Atividades</a>
+<a> - Atividades</a>
 ---
 <!--------Slide--11-------------------->
 <!---------Arquitetura de Software--casos-de-uso------------------>
@@ -529,7 +529,7 @@ output:
 
 # Codificação
 <p align="center">
-    <img src="img/codificacao.jpg" alt="Image" width="550" height="350 " />
+    <img src="img/codificacao.gif" alt="Image" width="550" height="350 " />
 </p>
 ---
 
@@ -667,10 +667,10 @@ output:
 <a href="https://casasonia.com.br" style="text-decoration: underline;">Site atual da empresa.</a>
 <br>
 <br>
-<a href="" style="text-decoration: underline;">Deploy da aplicação do projeto proposto pelo Pi.</a>
+<a href="https://csfashion-pi.netlify.app/" style="text-decoration: underline;">Deploy da aplicação do projeto proposto pelo Pi.</a>
 <br>
 <br>
-<a href="#" style="text-decoration: underline;">Deploy da Api.</a>
+<a href="https://github.com/Lucas-Ed/Backend_grupo02_pi" style="text-decoration: underline;">Repositório da Api.</a>
 <br>
 <br>
 <a href="https://github.com/Lucas-Ed/grupo-02_pi" style="text-decoration: underline;">Github do grupo-02</a>
@@ -701,6 +701,23 @@ output:
 </p>
 ---
 <!--------Slide--31--------------------->
+<!---------Perguntas--------------------->
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<div style="margin-left: 200px;">
+<h1 style=" margin-left: 100px; margin-top: 100px;">Fim !<p style="  margin-top: 100px;"> <h1>Muito Obrigado !!!</h1></p</h1>
+</div>
+---
+<!--------Slide--32--------------------->
 <!---------Perguntas--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">

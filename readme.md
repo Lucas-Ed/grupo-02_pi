@@ -32,8 +32,8 @@ Projeto Interdisciplinar do grupo 02, do curso <a href="https://fatecararas.cps.
  <a href="#-layout-do-projeto">Layout</a> • 
  <a href="#-metodologia-ágil">Metodologia ágil</a> •
  <a href="#-Api ">Api</a> •
- <a href="#autores">Autores</a> •
- <a href="#apresentação-do-projeto-interdisciplinar">Deploy</a> •
+ <a href="#-autores">Autores</a> •
+ <a href="#-Deploy">Deploy</a> •
  <a href="#memo-licença">Licença</a>
 </p>
 
@@ -69,16 +69,18 @@ Para o gerenciamento, do projeto, foi utilizado o [Trello](https://trello.com/in
 Foi construída uma API para o projeto em NodeJs, acesse [aqui](https://github.com/Lucas-Ed/Backend_grupo02_pi), o repositório da Api, para mais informações.
 
 
-## Apresentação do projeto interdiciplinar
-
+Apresentação do projeto interdiciplinar,
 Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
-
+---
 Acesse a documentação do projeto [aqui.](https://github.com/Lucas-Ed/grupo-02_pi/blob/main/Documentação/PI%20-%20Documentação.pdf)
-
 ---
 
-## Autores
+# 📲 Deploy
 
+Acesse o site do Pi [aqui.](https://csfashion-pi.netlify.app)
+---
+
+## 👨🏼‍🎓 Autores
 <table>
   <tr>
     <td align="center">
