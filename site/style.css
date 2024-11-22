@@ -435,7 +435,6 @@ P {
   display: flex; /* Define um contêiner flexível para o texto */
   flex-direction: column;  /* Alinhar o conteúdo em coluna */
   justify-content: center; /*Centraliza o conteúdo dentro do contêiner*/
-
   /*border: 2px solid violet;*/
 
 
