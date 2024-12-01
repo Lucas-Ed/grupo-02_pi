@@ -35,7 +35,7 @@ Licença Creative Commons 4.0 não comercial, para mais informações acesse o l
  <a href="#-layout-do-projeto">Layout</a> • 
  <a href="#-metodologia-ágil">Metodologia ágil</a> •
  <a href="#-Api ">Api</a> •
- <a href="#Acessibilidade">Acessibilidade</a>
+ <!-- <a href="#Acessibilidade">Acessibilidade</a> -->
  <a href="#-Deploy">Deploy</a> •
   <a href="#-autores">Autores</a> •
  <a href="#memo-licença">Licença</a>
@@ -73,9 +73,9 @@ Para o gerenciamento, do projeto, foi utilizado o [Trello](https://trello.com/in
 ## 🧩 Api 
 Foi construída uma API para o projeto em NodeJs, acesse [aqui](https://github.com/Lucas-Ed/Backend_grupo02_pi), o repositório da Api, para mais informações.
 
-## 🤝🏼 Acessibilidade
+<!-- ## 🤝🏼 Acessibilidade
 
-![](/img/acessibilidade.mp4)
+![](/img/acessibilidade.mp4) -->
 
 Apresentação do projeto interdiciplinar,
 Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
