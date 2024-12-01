@@ -1,0 +1,437 @@
+/*Configurações padrão do body*/
+* {
+    margin: 0;/*remove a margem padrão do body*/
+    padding: 0;
+    /*remove o padding padrão do body*/
+    box-sizing: border-box;
+    /*ajusta o box-model para incluir padding e border no tamanho total do elemento*/
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    /*define a fonte padrão para o corpo do site*/
+    max-width: 1920px;
+    /*define a largura máxima do site*/
+    margin: 0 auto;
+    /*centraliza o site horizontalmente*/
+    background-image:
+        /* Detalhes geométricos laranjas */
+        linear-gradient(135deg, #ff6f00 25%, transparent 25%) -50px -50px,
+        linear-gradient(225deg, #ff6f00 25%, transparent 25%) -50px -50px;
+    background-size: 100px 100px;
+    /* Tamanho dos detalhes triangulares */
+    background-color: var(--bgBodyDark);
+  }
+  main {
+    background-color: var(--bgBodyDark);
+    display: flex;
+    /*exibe o conteúdo como flexível*/
+    flex-direction: column;
+    /*alinha o conteúdo em coluna*/
+
+}
+
+P {
+    color: var(--bgBodyLight);
+    /*cor do texto da história*/
+}
+/*-------------Detalhes geométricos background---------------------*/
+.background {
+    position: relative;/* Posiciona o conteúdo de forma relativa */
+    min-height: 100vh;/* Altura mínima da div */
+    overflow: hidden;/* Esconde o conteúdo que ultrapassa a div */
+    /* Garante que os detalhes não "escapem" */
+
+
+}
+
+.background::before,
+.background::after {
+    content: '';
+    z-index: -1;/* Garante que os detalhes fiquem atrás do conteúdo */
+    border: 1px solid #ff6f00;
+    /* Cor laranja */
+    transform: rotate(45deg);
+    /* Inclinação das linhas */
+    opacity: 0.5;
+    /* Transparência */
+}
+
+.background::before {
+    position: absolute;/* Posiciona o elemento de forma absoluta */
+    width: 200px;/* Largura do elemento */
+    height: 200px;/* Altura do elemento */
+    top: 10%;/* Posiciona a 10% do topo */
+    left: -50px;/* Posiciona a -50px da esquerda */
+}
+
+.background::after {
+    position: absolute;/* Posiciona o elemento de forma absoluta */
+    width: 250px;/* Largura do elemento */
+    height: 250px;/* Altura do elemento */
+    bottom: 15%;/* Posiciona a 15% do rodapé */
+    right: -60px;/* Posiciona a -60px da direita */
+}
+
+/*-------------Inicio_Personalizar_Barra_Scroll----------------*/
+::-webkit-scrollbar {
+    width: 1.4rem;/* Largura da scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #323131;
+    /* Fundo do track da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EE7026;
+    /* Cor do thumb da scrollbar */
+}
+
+/*-------------Fim_Personalizar_Barra_Scroll----------------*/
+
+
+/* Estilo para a logo */
+.logo img {
+    width: auto;
+    /*largura automática para manter a proporção*/
+    margin-left: 50px;
+    /*margem esquerda dos links navbar*/
+}
+
+.logo img {
+    width: auto;/*largura automática para manter a proporção*/
+    margin-left: 50px;/*margem esquerda dos links navbar*/
+  }
+  
+  /* Ajuste para a navbar */
+  .navbar {
+    background-color: #333333;/*cor de fundo da navbar*/
+    padding: 15px 40px;/*adiciona espaçamento interno na navbar*/
+    box-shadow: 0px 2px 20px 0px var(--laranja);/*adiciona sombra na navbar*/
+  }
+  :root {
+    --bgBodyDark: #333333;/*cor de fundo do body*/
+    --bgBodyLight: #dddddd;
+    --laranja: #ee7026;
+    --laranja-hover: #c75b1c;
+  }
+  .navbar-nav {
+    gap: 120px;/*espaçamento entre os links navbar*/
+    /*margin-left: 90px;/*margem esquerda dos links navbar*/
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;/*remove o sublinhado dos links*/
+    color: #f2f2f2;/*cor do texto dos links*/
+    font-family: Arial, sans-serif;/*fonte dos links*/
+    font-weight: 600;/*espessura da fonte dos links*/
+    padding: 10px;/*adiciona espaçamento interno nos links*/
+  }
+  
+  .topnav a:hover {
+    border-bottom: 1px solid #EE7026;
+    color: #ee7026;/*cor do texto ao passar o mouse*/
+    text-decoration: none;/*remove o sublinhado ao passar o mouse*/
+  }
+  
+  /* Estilo para o botão toggle */
+  .toggle {
+    display: flex;/*exibe o toggle como flexível*/
+    align-items: center;/*alinha o conteúdo verticalmente*/
+    cursor: pointer;/*altera o cursor ao passar o mouse*/
+  }
+  
+  .toggle .label {
+    background-color: var(--bgBodyLight);/*cor de fundo do toggle*/
+    width: 50px;/*largura do toggle*/
+    border-radius: 25px;/*borda arredondada do toggle*/
+    padding: 5px;/*adiciona espaçamento interno no toggle*/
+  }
+  
+  .toggle .label .box {
+    background-color: black;/*cor de fundo da box do toggle*/
+    background-image: url('./assets/img/sun.svg');/*adiciona a imagem do toggle*/
+    background-size: 10px 10px;/*ajusta o tamanho da imagem do toggle*/
+    background-repeat: no-repeat;/*remove a repetição da imagem*/
+    background-position: center;/*centraliza a imagem*/
+    width: 17px;/*largura da box*/
+    height: 17px;/*altura da box*/
+    border-radius: 50%;/*borda arredondada da box*/
+    transition: transform 0.3s ease;/*adiciona uma transição suave*/
+  }
+  
+  header .container .toggle.active .label {
+    background-color: #f9f9f9;/*altera a cor de fundo do toggle quando acionado*/
+  }
+  
+  header .container .toggle.active .label .box {
+    transform: translateX(25px);/*move a box para a direita quando acionado*/
+  }
+  
+  /* Responsivo para telas menores */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      display: flex;/*exibe o menu hamburguer como flexível*/
+      justify-content: center;/*alinha o conteúdo horizontalmente*/
+      align-items: center;/*alinha o conteúdo verticalmente*/
+      position: absolute;/*posiciona o menu hamburguer de forma absoluta*/
+      top: 100px; /* Ajuste a partir do topo, abaixo do header */
+      left: 50%;/*centraliza o menu hamburguer horizontalmente*/
+      transform: translateX(-50%);/*ajusta o menu hamburguer para o centro exato*/
+      width: 100%; /* Reduz a largura do menu */
+      max-height: 330px; /* Limita a altura do menu */
+      background-color: var(--bgBodyDark);/*cor de fundo do menu hamburguer*/
+      z-index: 1001;/*posiciona o menu hamburguer acima dos outros elementos*/
+      opacity: 0;/*define a opacidade do menu hamburguer como 0*/
+      visibility: hidden;/*oculta o menu hamburguer*/
+      transition: opacity 0.3s ease, visibility 0.3s ease;/*adiciona uma transição suave*/
+      /* border-radius: 8px; Adiciona bordas arredondadas */
+      padding: 30px;/*adiciona espaçamento interno no menu hamburguer*/
+    }
+  
+    .navbar-collapse.show {
+      opacity: 1;/*altera a opacidade do menu hamburguer para 1*/
+      visibility: visible;/*exibe o menu hamburguer*/
+    }
+  
+    /* Ajuste do estilo dos itens do menu para centralizar */
+    .navbar-nav {
+      display: flex;/*exibe os links do menu como flexível*/
+      flex-direction: column;/*alinha os links do menu em coluna*/
+      gap: 20px;/*espaçamento entre os links do menu*/
+      text-align: center;/*centraliza o texto dos links do menu*/
+      margin-left: 10px;/*margem esquerda dos links navbar*/
+    }
+  
+    .navbar-nav li a {
+      font-size: 1.2rem;/*tamanho da fonte dos links do menu hamburguer*/
+    }
+  
+    /* Estilo do botão hamburguer */
+    .navbar-toggler {
+      /* color: #EE7026;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); */
+      color: #EE7026; /* Define a cor do botão */
+      display: block; /* Exibe o botão como bloco */
+      position: absolute; /* Posiciona o botão de forma absoluta */
+      left: 50%; /* Centraliza o botão horizontalmente */
+      transform: translateX(-50%); /* Ajusta o botão para o centro exato */
+    }
+    /* Estilo de cor interna, específico para o ícone interno do hamburguer */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23EE7026' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /*altera a cor do ícone hamburguer*/
+  }
+    /* Estilo para a logo */
+  
+  .logo img {
+    height: 50px;/*altura da logo*/
+    width: auto;/*largura automática para manter a proporção*/
+  }
+  }
+/*--------------------Classes-light-mode----------------------------------*/
+/* Classe para Modo Claro */
+/* Modo Claro */
+.light-mode main {
+    background-color: var(--bgBodyLight);
+    /*cor de fundo do body no modo claro*/
+}
+
+.light-mode section {
+  background-color: var(--bgBodyLight);
+}
+.light-mode .navbar {
+    background-color: var(--bgBodyLight);
+    /*cor de fundo da navbar no modo claro*/
+}
+
+.light-mode .toggle .label {
+    background-color: var(--bgBodyDark);
+    /* Fundo do toggle ajustado */
+}
+
+.light-mode .toggle .label .box {
+    background-color: var(--bgBodyLight);
+    /*Altera o background do Toggle quando acionado*/
+    background-image: url('./assets/img/moon.svg');
+    /*Altera a imagem do Toggle quando acionado*/
+    transform: translateX(25px);
+    /* Move a box para a direita no modo claro */
+}
+
+.light-mode .navbar-nav li a {
+    color: var(--bgBodyDark);
+    /*Altera a cor dos links do navbar quando acionado*/
+}
+
+/* Regras para o menu hamburguer em modo claro e tela pequena */
+@media (max-width: 768px) {
+    .light-mode .navbar-collapse.show {
+        background-color: var(--bgBodyLight);
+        /*Altera o background do menu hamburguer quando acionado*/
+    }
+
+    .light-mode .navbar-collapse.show .navbar-nav li a {
+        color: var(--bgBodyDark);
+        /*Altera a cor dos links do menu hamburguer quando acionado*/
+    }
+}
+
+.light-mode p {
+    /* alttera a cor do texto da tag p, da seção história quando o Toggle estiver acionado*/
+    color: var(--bgBodyDark);
+}
+.light-mode h5 {
+  /* alttera a cor do texto da tag <h5>, da seção, quando o Toggle estiver acionado*/
+  color: var(--bgBodyDark);
+}
+
+.light-mode .text-container h3 {
+    color: var(--bgBodyDark);
+}
+.light-mode #contatos a {
+    color: var(--bgBodyDark);
+    /*altera a cor do texto dos links da sessão contato*/
+}
+
+
+.light-mode .newsletterInput {
+    color: var(--bgBodyDark) !important;
+    /*altera a cor do texto do input da newsletter*/
+}
+
+/*Botões comprar*/
+.bold-border-button {
+  display: flex;
+  align-items: center;
+  background-color: var(--laranja);
+  border: 2px solid var(--bgBodyDark);
+  border-bottom-width: 8px;
+  border-radius: 12px;
+  padding: 10px 10px;
+  box-shadow: 0 4px 6px var(--laranja-hover);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  color: var(--bgBodyLight);
+  width: 100%;
+  justify-content: center;
+}
+
+.bold-border-button:hover {
+  background-color: var(--laranja-hover); /* Cor mais escura ou mais clara */
+  box-shadow: 0 8px 12px var(--laranja-hover); /* Aumenta a sombra */
+  transform: translateY(-2px); /* Levanta levemente o botão */
+  border-color: var(--bgBodyLight); /* Realce na borda */
+}
+
+/*---------*/
+
+/*Links botão comprar*/
+a {
+  color: var(--bgBodyLight);
+  text-decoration: none;/*remove o sublinhado do link*/
+  font-family: "Archivo", sans-serif;/*define a fonte padrão para o corpo do site*/
+}
+/* Personalizar barra de scroll*/
+::-webkit-scrollbar {
+width: 1.4rem;
+}
+
+
+::-webkit-scrollbar-track {
+background: #323131; /* Fundo do track da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+background: #EE7026; /* Cor do thumb da scrollbar */
+}
+
+
+/*-------*/
+/*-----------------------------Inicio_Produtos-------------------------------*/
+.sectionTitle {
+  font-size: 32px;/*tamanho da fonte do título da seção*/
+  font-weight: normal;/*espessura da fonte do título da seção*/
+  color: var(--laranja);/*cor do título da seção*/
+  text-align: center;/*alinha o título da seção centralizado*/
+  padding-bottom: 40px ;/*adiciona espaçamento inferior no título da seção*/
+  span {
+    padding-top: 4px;/*espaçamento superior*/
+    border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
+  }
+}
+.product-card {
+  background-color: transparent;/*cor de fundo do card do produto*/
+  border: none;/*remove a borda do card do produto*/
+  border-radius: 10px;/*borda arredondada do card do produto*/
+  padding: 15px;/*adiciona espaçamento interno no card do produto*/
+  text-align: center;/*alinha o texto centralizado*/
+  color: var(--bgBodyLight);/*cor do texto do card do produto*/
+}
+.product-card img {
+  max-width: 100%;/*largura máxima da imagem do card do produto*/
+  border-radius: 8px;/*borda arredondada da imagem do card do produto*/
+}
+.product-card .btn {
+  margin-top: 10px;/*margem superior do botão do card do produto*/
+}
+.section-title {
+  text-align: center;/*alinha o texto centralizado*/
+  margin-bottom: 30px;/*margem inferior do título da seção*/
+  color: var(--laranja);/*cor do texto do título da seção*/
+}
+
+
+/*---------------------------------Fim_Produtos-------------------------------*/
+
+/*---------------------------------Inicio_Footer-------------------------------*/
+footer {
+    border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
+    background-color: var(--bgBodyDark);/*cor de fundo do footer*/
+    display: flex;/*exibe o conteúdo como flexível*/
+    align-items: center;/*alinha o conteúdo verticalmente*/
+    justify-content: center;/*alinha o conteúdo horizontalmente*/
+
+    p {
+        font-size: 16px;/*tamanho da fonte do texto do footer*/
+    }
+}
+
+.light-mode footer {
+    background-color: var(--bgBodyLight);/*cor de fundo do footer no modo claro*/
+}
+
+/*---------------------------------Fim_Footer-------------------------------*/
+
+/*---------------------------------Inicio_ScrollToTop-------------------------------*/
+  /*Botão de scroll para o topo*/
+  #scrollToTop {
+    position: fixed;/*posiciona o botão de forma fixa*/
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 95%; /* Ajusta a distância da lateral direita */
+    z-index: 1000; /* Certifica-se de que o botão ficará acima dos outros elementos */
+  }
+  
+  #scrollToTop img {
+    width: 50px; /* Ajusta o tamanho do botão */
+    height: 50px;/*altura do botão*/
+    cursor: pointer; /* Mostra um cursor de mão ao passar sobre o botão */
+    transition: transform 0.3s ease;
+  }
+  
+  #scrollToTop img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o botão ao passar o mouse */
+  }
+
+  @media (max-width: 992px) {
+    #scrollToTop {
+      left: 80%; /* Ajusta a distância da lateral direita */
+    }
+  }
+/*---------------------------------Fim_ScrollToTop-------------------------------*/
+
+
+

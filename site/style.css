@@ -1,4 +1,4 @@
-/*Configurações padrão do body*/
+  /*---------------------------------INICIO_CONFIGURAÇÃO-------------------------------*/
 * {
   margin: 0;/*remove a margem padrão do body*/
   padding: 0;/*remove o padding padrão do body*/
@@ -14,24 +14,29 @@ body {
   linear-gradient(135deg, #ff6f00 25%, transparent 25%) -50px -50px,
   linear-gradient(225deg, #ff6f00 25%, transparent 25%) -50px -50px;
   background-size: 100px 100px;  /* Tamanho dos detalhes triangulares */
+  background-color: #EE7026;
 }
-/*-------------Detalhes geométricos background---------------------*/
+  /*---------------------------------FIM_CONFIGURAÇÃO-------------------------------*/
+
+/*---------------------------------INICIO_GEO_BACKGROUND-------------------------------*/
 .background {
   position: relative;
   min-height: 100vh;
   overflow: hidden; /* Garante que os detalhes não "escapem" */
+  
 }
 
 .background::before,
 .background::after {
   content: '';
-  position: absolute;
+  
   border: 1px solid #ff6f00; /* Cor laranja */
   transform: rotate(45deg); /* Inclinação das linhas */
   opacity: 0.5; /* Transparência */
 }
 
 .background::before {
+  position: absolute;
   width: 200px;
   height: 200px;
   top: 10%;
@@ -39,44 +44,33 @@ body {
 }
 
 .background::after {
+  position: absolute;
   width: 250px;
   height: 250px;
   bottom: 15%;
   right: -60px;
 }
+/*---------------------------------FIM_GEO_BACKGROUND-------------------------------*/
 
-
-
-.content {
-  position: relative;
-  z-index: 10; /* Garante que o conteúdo fique por cima das linhas */
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-/*-------------------------------------------------------------------------------*/
-/* Personalizar barra de scroll*/
-/* Personalização da barra de rolagem */
+/*---------------------------------INICIO_BARRA_SCROLL-------------------------------*/
 ::-webkit-scrollbar {
   width: 1.4rem;
 }
-  
 
 ::-webkit-scrollbar-track {
-  background: #323131; /* Fundo do track da scrollbar */
+  background: #323131;
+  /* Fundo do track da scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #EE7026; /* Cor do thumb da scrollbar */
+  background: #EE7026;
+  /* Cor do thumb da scrollbar */
 }
+/*---------------------------------FIM_BARRA_SCROLL-------------------------------*/
 
-
-/*-------*/
-/*-----------------------------*/
+/*-------------------------------INICIO_HEADER--------------------------------*/
 /* Estilo para a logo */
 .logo img {
-  height: 70px;/*altura da logo*/
   width: auto;/*largura automática para manter a proporção*/
   margin-left: 50px;/*margem esquerda dos links navbar*/
 }
@@ -84,7 +78,7 @@ body {
 /* Ajuste para a navbar */
 .navbar {
   background-color: #333333;/*cor de fundo da navbar*/
-  padding: 10px 20px;/*adiciona espaçamento interno na navbar*/
+  padding: 15px 40px;/*adiciona espaçamento interno na navbar*/
   box-shadow: 0px 2px 20px 0px var(--laranja);/*adiciona sombra na navbar*/
 }
 :root {
@@ -95,7 +89,7 @@ body {
 }
 .navbar-nav {
   gap: 120px;/*espaçamento entre os links navbar*/
-  margin-left: 90px;/*margem esquerda dos links navbar*/
+  /*margin-left: 90px;/*margem esquerda dos links navbar*/
 }
 
 .navbar-nav li a {
@@ -107,8 +101,8 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #b7b5b9;/*cor de fundo ao passar o mouse*/
-  color: black;/*cor do texto ao passar o mouse*/
+  border-bottom: 1px solid #EE7026;
+  color: #ee7026;/*cor do texto ao passar o mouse*/
   text-decoration: none;/*remove o sublinhado ao passar o mouse*/
 }
 
@@ -128,8 +122,8 @@ body {
 
 .toggle .label .box {
   background-color: black;/*cor de fundo da box do toggle*/
-  background-image: url('./assets/toggle.svg');/*adiciona a imagem do toggle*/
-  background-size: 12px 12px;/*ajusta o tamanho da imagem do toggle*/
+  background-image: url('./assets/img/sun.svg');/*adiciona a imagem do toggle*/
+  background-size: 10px 10px;/*ajusta o tamanho da imagem do toggle*/
   background-repeat: no-repeat;/*remove a repetição da imagem*/
   background-position: center;/*centraliza a imagem*/
   width: 17px;/*largura da box*/
@@ -153,7 +147,7 @@ header .container .toggle.active .label .box {
     justify-content: center;/*alinha o conteúdo horizontalmente*/
     align-items: center;/*alinha o conteúdo verticalmente*/
     position: absolute;/*posiciona o menu hamburguer de forma absoluta*/
-    top: 50px; /* Ajuste a partir do topo, abaixo do header */
+    top: 80px; /* Ajuste a partir do topo, abaixo do header */
     left: 50%;/*centraliza o menu hamburguer horizontalmente*/
     transform: translateX(-50%);/*ajusta o menu hamburguer para o centro exato*/
     width: 100%; /* Reduz a largura do menu */
@@ -203,12 +197,13 @@ header .container .toggle.active .label .box {
   /*altera a cor do ícone hamburguer*/
 }
   /* Estilo para a logo */
+
 .logo img {
-  height: 30px;/*altura da logo*/
+  height: 50px;
   width: auto;/*largura automática para manter a proporção*/
-  margin-right: 20px;/*margem esquerda dos links navbar*/
 }
 }
+
 /*----------------------------carousel---------------------------*/
 /* Mantendo suas classes de background */
 
@@ -232,30 +227,8 @@ header .container .toggle.active .label .box {
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição da imagem */
   width: 100%; /* Garante que o elemento ocupe toda a largura disponível */
-  height: 50vh; /* Altura responsiva; ajuste conforme necessário */
 }
 
-
-
-/* 
-classe se usar o bootstrap para responsividade, mas ainda não esta 100%
-.bg1 {
-  background: url("assets/backgroundheader1.png") no-repeat center center;
-  background-size: cover;
-  height: 300px; 
-  transition: background-image 0.3s ease-in-out;
-}
-
-
-.bg2 {
-  background: url("assets/backgroundheader2.png") no-repeat center center;
-  background-size: cover;
-}
-
-.bg3 {
-  background: url("assets/backgroundheader3.png") no-repeat center center;
-  background-size: cover;
-} */
 #bottom-header {
   height: 436px;/*altura do header*/
   background-position: center;/*centraliza a imagem de fundo*/
@@ -278,7 +251,7 @@ classe se usar o bootstrap para responsividade, mas ainda não esta 100%
 
 .light-mode .toggle .label .box {
   background-color: #DDDDDD; /*Altera o background do Toggle quando acionado*/
-  background-image: url('./assets/toggle_light.svg');/*Altera a imagem do Toggle quando acionado*/
+  background-image: url('./assets/img/moon.svg');/*Altera a imagem do Toggle quando acionado*/
   transform: translateX(25px); /* Move a box para a direita no modo claro */
 }
 
@@ -311,27 +284,27 @@ classe se usar o bootstrap para responsividade, mas ainda não esta 100%
 
 /* Modo claro (light-mode) */
 .light-mode .img-nike {
-  content: url("assets/dark_nike.svg");/*altera a imagem da marca Nike*/
+  content: url("assets/img/logo_dark_nike.svg");/*altera a imagem da marca Nike*/
 }
 
 .light-mode .img-adidas {
-  content: url("assets/dark_adidas.svg");/*altera a imagem da marca Adidas*/
+  content: url("assets/img/logo_dark_adidas.svg");/*altera a imagem da marca Adidas*/
 }
 
 .light-mode .img-puma {
-  content: url("assets/dark_puma.svg");/*altera a imagem da marca Puma*/
+  content: url("assets/img/logo_dark_puma.svg");/*altera a imagem da marca Puma*/
 }
 
 .light-mode .img-lacoste {
-  content: url("assets/dark_lacoste.svg");/*altera a imagem da marca Lacoste*/
+  content: url("assets/img/logo_dark_lacoste.svg");/*altera a imagem da marca Lacoste*/
 }
 
 .light-mode .img-mizuno {
-  content: url("assets/dark_mizuno.svg");/*altera a imagem da marca Mizuno*/
+  content: url("assets/img/logo_dark_mizuno.svg");/*altera a imagem da marca Mizuno*/
 }
 
 .light-mode .img-newbalance {
-  content: url("assets/dark_newbalace.svg");/*altera a imagem da marca New Balance*/
+  content: url("assets/img/logo_dark_newbalace.svg");/*altera a imagem da marca New Balance*/
 }
 
 .light-mode #contatos a {
@@ -342,14 +315,14 @@ classe se usar o bootstrap para responsividade, mas ainda não esta 100%
 .light-mode .newsletterInput {
         color: var(--bgBodyDark)!important;/*altera a cor do texto do input da newsletter*/
 }
-/*-----------------------------------------------------------------------------------*/
-/*seção história*/
+/*-------------------------------INICIO_HEADER--------------------------------*/
+
+/*-------------------------------INICIO_SESSÃO_HISTORIA--------------------------------*/
 main {
   background-color: var(--bgBodyDark);
-  padding-top: 150px;/*adiciona espaçamento superior*/
   display: flex;/*exibe o conteúdo como flexível*/
   flex-direction: column;/*alinha o conteúdo em coluna*/
-  row-gap: 200px;/*espaçamento entre as seções*/
+  
 }
 
 #historia {
@@ -357,12 +330,14 @@ main {
   flex-direction: column;/*alinha a seção história em coluna*/
   row-gap: 50px;/*espaçamento entre os elementos*/
   height: auto;/*altura automática*/
+  padding-bottom: 100px;
 
   #texto-historia {
     display: flex;/*exibe o texto da história como flexível*/
     flex-direction: column;/*alinha o texto da história em coluna*/
     row-gap: 40px;/*espaçamento entre os elementos*/
     align-items: center;/*alinha o texto da história horizontalmente*/
+    padding: 20px;
   }
 
   p {
@@ -383,15 +358,158 @@ P {
     padding-top: 4px;/*espaçamento superior*/
     border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
   }
+  
+}
+/*-------------------------------FIM_SESSÃO_HISTORIA--------------------------------*/
+
+/*-------------------------------INICIO_SESSÃO_VITRINE--------------------------------*/
+#slider {
+  display: flex;/*exibe o slider como flexível*/
+  justify-content: center; /*space-around; alinha o conteúdo horizontalmente*/
+  width: 100%;/* 1440pxlargura do slider*/
+  margin: 0 auto;/*centraliza o slider horizontalmente*/
+  position: relative;/*posiciona o slider de forma relativa*/
+  overflow: hidden; /* Impede que elementos transbordem */
+}
+#list {
+  position: absolute;/*posiciona a lista de imagens de forma absoluta*/
+  top: 0;/*posiciona a lista de imagens no topo*/
+  left: 0;/*posiciona a lista de imagens à esquerda*/
+  height: 100%;/*altura de 100%*/
+  display: flex;/*exibe a lista de imagens como flexível*/
+  width: max-content;/*largura máxima*/
+  column-gap: 30px;/*espaçamento entre as imagens*/
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Seção Marcas */
+.group {
+  width: 1300px;/*largura do grupo de imagens*/
+  height: 100%;/*altura de 100%*/
+  display: flex;/*exibe o grupo de imagens como flexível*/
+  justify-content: space-between;/*alinha o conteúdo horizontalmente*/
+  object-fit: cover;/*ajusta a imagem para cobrir o contêiner*/
+  /* border: 2px dotted blue; */
+}
+
+.pictureContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pictureContainer img {
+  width: 300px;/*largura da imagem*/
+  text-align: center; /* Centraliza o texto */
+  /* border: 2px dotted rgb(18, 237, 230); */
+}
+
+/* Carousel */
+.sectionTitle-vitrine {
+  font-size: 32px;/*tamanho da fonte do título da seção*/
+  font-weight: normal;/*espessura da fonte do título da seção*/
+  color: var(--laranja);/*cor do título da seção*/
+  text-align: center;/*alinha o título da seção centralizado*/
+  margin-left: 45%;/*margem esquerda do título da seção*/
+  span {
+    padding-top: 4px;/*espaçamento superior*/
+    border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
+  }
+}
+
+.carousel-vitrine {
+  position: relative; /* Para alinhar os controles */
+  max-width: 100%;
+
+}
+
+#section_vitrine{
+  margin-left: -700px;
+}
+
+
+.carousel-item img {
+  object-fit: cover;/*ajusta a imagem para cobrir o contêiner*/
+  height: auto; /* Remove fixed height */
+}
+
+@media (max-width: 800px) {
+  #home {
+    flex-wrap: wrap;
+  }
+  
+  #section_vitrine{
+    margin-left: 0px;
+  
+  }
+
+  #carouselExample{
+    margin-left: -450px;
+  }
+
+  .sectionTitle-vitrine {
+    flex-grow: 1;
+    margin-left: 0;
+  }
+
+  .carousel-vitrine {
+    
+    width: 100%; /* Ajusta o tamanho à largura da tela */
+  }
+
+  .group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Coloca os itens em uma coluna */
+    align-items: center;
+  }
+
+  #img_01 img {
+    width: 150px;
+    z-index: 1; /*Sobrepoe o elemento a cima dos outros*/
+  }
+
+  #img_02 img {
+    width: 150px;
+    z-index: 1;/*Sobrepoe o elemento a cima dos outros*/
+  }
+
+  #img_03 img {
+    width: 150px;
+    z-index: 1;/*Sobrepoe o elemento a cima dos outros*/
+  }
+
+  .sectionTitle-vitrine {
+    font-size: 20px; /* Reduz o tamanho do título */
+  }
+}
+
+.sectionTitle {
+/* border: 2px dotted blue; */
+margin-top: 55px;
+}
+
+.riscoMenor {
+  border-bottom: 1px solid var(--laranja);
+  padding-bottom: 4px;
+  
+}
+/*links seção contato*/
+#decoration {
+  text-decoration: none;/*remove o sublinhado do link*/
+}
+/*-------------------------------FIM_SESSÃO_VITRINE--------------------------------*/
+
+/*-------------------------------INICIO_SESSÃO_MARCAS--------------------------------*/
 #marcas {
   margin: 0 auto; /* Centraliza a seção horizontalmente */
   width: 70%; /* Define a largura da seção para ocupar toda a largura do contêiner pai */
   max-width: 1140px; /* Limita a largura máxima para 100%, evitando ultrapassar a tela */
-
+  position: relative;
+  z-index: 10; /* Garante que o conteúdo fique por cima das linhas */
+  color: var(--bgBodyLight);
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 200px;
 }
 
 .marca-container {
@@ -441,7 +559,7 @@ P {
 }
 
 .text-container h3 {
-  color: white; /* Define a cor do texto como branco */
+  color: var(--bgBodyLight); /* Define a cor do texto como branco */
   font-weight: 600; /* Aplica uma fonte semi-negrito */
   font-size: 20px; /* Define o tamanho da fonte */
   width: 100%; /* Define a largura do título para 100% do contêiner */
@@ -455,18 +573,38 @@ P {
 }
 
 /* Media Query para telas menores que 768px */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  section #marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-wrap: nowrap;
+  }
+
+  #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .container-marcas{
     height: auto;/*altura automática*/
     position: relative; /* Define o contêiner como relativo para posicionar a imagem como overlay */
     flex-direction: column; /* Muda o layout para coluna no mobile */
     align-items: center; /* Centraliza os elementos no contêiner */
     text-align: center; /* Centraliza o texto dentro do contêiner */
-    height: auto; /* Altura automática para ajuste de conteúdo */
-    padding: 40px 0; /* Espaçamento interno para separação entre blocos */
+    padding: 100px 0; /* Espaçamento interno para separação entre blocos */
     text-align: center; /* Centraliza o texto */
-    margin-left: 25px;/*margem esquerda do contêiner de marcas*/
-    padding-bottom: 150px;/*adiciona espaçamento inferior*/
+    margin: 0;
+  }
+
+  .text-container {
+    width: 400px;
+  }
+
+  .text-container p {
+    text-align: center;
   }
 
 
@@ -476,12 +614,9 @@ P {
     align-items: center; /* Centraliza os elementos no contêiner */
     text-align: center; /* Centraliza o texto dentro do contêiner */
     height: auto; /* Altura automática para ajuste de conteúdo */
-    padding: 40px 0; /* Espaçamento interno para separação entre blocos */
+    padding: 100px 0; /* Espaçamento interno para separação entre blocos */
     text-align: center; /* Centraliza o texto */
-    margin-left: 25px;/*margem esquerda do contêiner de marcas*/
-    padding-bottom: 150px;/*adiciona espaçamento inferior*/
-    /* gap: 80px; */
-
+    margin: 0;
   }
 
   .container-marcas img,
@@ -518,246 +653,53 @@ P {
     line-height: 1.5; /* Altura de linha ajustada para leitura confortável */
     padding-left: 10px; /* Espaço à esquerda para separar do contêiner */
   }
-
-
 }
+/*-------------------------------FIM_SESSÃO_MARCAS--------------------------------*/
+/*---------------------------------FIM_MAIN-------------------------------*/
 
-/*-----------------------------------------------------------------------------------*/
-/* Seção Vitrine */
-#slider {
-  display: flex;/*exibe o slider como flexível*/
-  justify-content: center; /*space-around; alinha o conteúdo horizontalmente*/
-  width: 100%;/* 1440pxlargura do slider*/
-  margin: 0 auto;/*centraliza o slider horizontalmente*/
-  position: relative;/*posiciona o slider de forma relativa*/
-  overflow: hidden; /* Impede que elementos transbordem */
-}
-#list {
-  position: absolute;/*posiciona a lista de imagens de forma absoluta*/
-  top: 0;/*posiciona a lista de imagens no topo*/
-  left: 0;/*posiciona a lista de imagens à esquerda*/
-  height: 100%;/*altura de 100%*/
-  display: flex;/*exibe a lista de imagens como flexível*/
-  width: max-content;/*largura máxima*/
-  column-gap: 30px;/*espaçamento entre as imagens*/
-}
-
-.group {
-  width: 1300px;/*largura do grupo de imagens*/
-  height: 100%;/*altura de 100%*/
-  display: flex;/*exibe o grupo de imagens como flexível*/
-  justify-content: space-between;/*alinha o conteúdo horizontalmente*/
-  object-fit: cover;/*ajusta a imagem para cobrir o contêiner*/
-  /* border: 2px dotted blue; */
-}
-
-.pictureContainer img {
-  width: 200px;/*largura da imagem*/
-  text-align: center; /* Centraliza o texto */
-  /* border: 2px dotted rgb(18, 237, 230); */
-}
-
-/* Carousel */
-.sectionTitle-vitrine {
-  font-size: 32px;/*tamanho da fonte do título da seção*/
-  font-weight: normal;/*espessura da fonte do título da seção*/
-  color: var(--laranja);/*cor do título da seção*/
-  text-align: center;/*alinha o título da seção centralizado*/
-  margin-left: 45%;/*margem esquerda do título da seção*/
-  span {
-    padding-top: 4px;/*espaçamento superior*/
-    border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
-  }
-}
-
-.carousel-vitrine {
-  /* border: 2px solid violet; */
-  margin: 100px auto;
-  width: 1270px;
-  /*overflow: hidden;  Esconde qualquer transbordamento */
-  position: relative; /* Para alinhar os controles */
-  max-width: 120%;
-
-}
-
-#section_vitrine{
-  margin-left: -700px;
-
-}
-#img_01 {
-  margin-left: 90px;
-}
-#img_02 {
-  margin-right: 70px;
-}
-
-#img_03 {
-  margin-right: 90px;
-}
-.carousel-item img {
-  object-fit: cover;/*ajusta a imagem para cobrir o contêiner*/
-  height: auto; /* Remove fixed height */
-}
-/* Media Query para telas menores que 768px */
-
-
-/* Ajustes para telas menores */
-@media (max-width: 800px) {
-  .carousel-vitrine {
-    margin-left: 85%;
-    width: 100%; /* Ajusta o tamanho à largura da tela */
-  }
-
-  .group {
-    flex-direction: column; /* Coloca os itens em uma coluna */
-    align-items: center;
-  }
-
-  #img_01, #img_02, #img_03 img {
-    margin: 10px 0; /* Adiciona espaço entre os itens */
-
-  }
-
-  .sectionTitle-vitrine {
-    font-size: 20px; /* Reduz o tamanho do título */
-  }
-}
-
-/*-------------------------------------------------------------------*/
-/*Seção do rodapé*/
-
-.sectionTitle {
-/* border: 2px dotted blue; */
-margin-top: 55px;
-}
-#lojas .containerLoja h4,
-#lojas .containerHorario h4,
-#contatos h4 {
-  font-size: 20px;/*tamanho da fonte do título*/
-  color: var(--laranja);
-  margin-bottom: 15px;
-  /* border: 2px dotted blue; */
-  margin-top: 55px;
-}
-
-.riscoMenor {
-  border-bottom: 1px solid var(--laranja);
-  padding-bottom: 4px;
-  
-}
-/*links seção contato*/
-#decoration {
-  text-decoration: none;/*remove o sublinhado do link*/
-}
-
-#contatos form input {
-  background-color: transparent;
-  border: 1px solid var(--laranja);
-  color: var(--bgBodyDark);
-}
-
-#contatos {
-  h4 {
-    font-size: 20px;
-    color: var(--laranja);
-    font-weight: normal;
-    margin-bottom: 15px;
-  }
-
-  a {
-    color: var(--bgBodyLight);
-
-    &:hover {
-      color: var(--laranja-hover) !important;
-    }
-  }
-}
-
-#contatos form button {
-  background-color: var(--laranja-hover);
-  color: var(--bgBodyLight);
-}
-
-/*Form*/
-.newsletterTitle {
-  font-size: 20px;
-  color: var(--laranja);
-  margin-bottom: 16px;
-}
-
-.newsletterForm {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-
-/*Newsletter*/
-.newsletterInput {
-    background-color: transparent;
-    border: 1px solid var(--laranja);
-    height: 50px;
-    padding-left: 14px;
-    font-size: 16px;
-    font-family: "Archivo", sans-serif;
-    color: var(--bgBodyLight)!important;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.newsletterInput:focus {
-  border-color: var(--laranja-hover);
-}
-
-.buttonContainer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.newsletterButton {
-    width: 100px;
-    height: 40px;
-    background-color: #8c4b24 !important;
-    color: var(--bgBodyLight);
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
-
-.newsletterButton:hover {
-  opacity: 0.8;
-}
-/*-----------------------*/
-
+/*---------------------------------INICIO_FOOTER-------------------------------*/
 footer {
   border-top: 1px solid var(--laranja);
+  background-color: var(--bgBodyDark);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
   p {
     font-size: 16px;
   }
 }
-/*-----------------------------*/
 
-/*Botão de scroll para o topo*/
+.light-mode footer{
+  background-color: var(--bgBodyLight);
+}
+
+/*---------------------------------FIM_FOOTER-------------------------------*/
+
+/*---------------------------------iNICIO_SCROLLTOTOP-------------------------------*/
 #scrollToTop {
   position: fixed;
   bottom: 20px; /* Ajusta a distância da parte inferior */
-  left: 1200px; /* Ajusta a distância da lateral direita */
+  left: 95%; /* Ajusta a distância da lateral direita */
   z-index: 1000; /* Certifica-se de que o botão ficará acima dos outros elementos */
 }
 
 #scrollToTop img {
-  width: 50px; /* Ajusta o tamanho do botão */
+  width: auto; /* Ajusta o tamanho do botão */
   height: 50px;
   cursor: pointer; /* Mostra um cursor de mão ao passar sobre o botão */
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 #scrollToTop img:hover {
-  transform: scale(1.1); /* Aumenta ligeiramente o botão ao passar o mouse */
+  transform: scale(1.2); /* Aumenta ligeiramente o botão ao passar o mouse */
 }
 
+@media (max-width: 800px) {
+  #scrollToTop {
+    position: fixed;
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 80%; /* Ajusta a distância da lateral direita */
+    z-index: 1000; /* Certifica-se de que o botão ficará acima dos outros elementos */
+  }
+}
+/*---------------------------------FIM_SCROLLTOTOP-------------------------------*/

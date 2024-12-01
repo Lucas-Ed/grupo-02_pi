@@ -10,12 +10,15 @@
 Projeto Interdisciplinar do grupo 02, do curso <a href="https://fatecararas.cps.sp.gov.br/tecnologia-em-desenvolvimento-de-softwares-multiplataforma/">DSM- Desenvolvimento de software multiplataforma.</a>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <!-- <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000"> -->
 </p>
-
 <br>
 
-<!-- <h3 align="center">✅ Concluído ✅</h3> -->
+Licença Creative Commons 4.0 não comercial, para mais informações acesse o link:
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+<h3 align="center">✅ Concluído ✅</h3>
 
 <!-- <p align="center">
  <a href="#-Projeto">Sobre o projeto</a> •
@@ -32,9 +35,11 @@ Projeto Interdisciplinar do grupo 02, do curso <a href="https://fatecararas.cps.
  <a href="#-layout-do-projeto">Layout</a> • 
  <a href="#-metodologia-ágil">Metodologia ágil</a> •
  <a href="#-Api ">Api</a> •
- <a href="#-autores">Autores</a> •
+ <a href="#Acessibilidade">Acessibilidade</a>
  <a href="#-Deploy">Deploy</a> •
+  <a href="#-autores">Autores</a> •
  <a href="#memo-licença">Licença</a>
+ 
 </p>
 
 
@@ -68,6 +73,9 @@ Para o gerenciamento, do projeto, foi utilizado o [Trello](https://trello.com/in
 ## 🧩 Api 
 Foi construída uma API para o projeto em NodeJs, acesse [aqui](https://github.com/Lucas-Ed/Backend_grupo02_pi), o repositório da Api, para mais informações.
 
+## 🤝🏼 Acessibilidade
+
+![](/img/acessibilidade.mp4)
 
 Apresentação do projeto interdiciplinar,
 Confira [aqui.](https://lucas-ed.github.io/grupo-02_pi/#1)
@@ -162,6 +170,6 @@ Professor, <a href="https://github.com/orlandosaraivajr">Orlando Saraiva.</a>
   ---
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT.
+Esse projeto está sob a licença Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0).
 
 ---

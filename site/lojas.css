@@ -1,0 +1,640 @@
+/*Configurações padrão do body*/
+* {
+  margin: 0;/*remove a margem padrão do body*/
+  padding: 0;/*remove o padding padrão do body*/
+  box-sizing: border-box;/*ajusta o box-model para incluir padding e border no tamanho total do elemento*/
+}
+
+body {
+  font-family: "Archivo", sans-serif;/*define a fonte padrão para o corpo do site*/
+  max-width: 1920px;/*define a largura máxima do site*/
+  margin: 0 auto;/*centraliza o site horizontalmente*/
+  background-image: 
+  /* Detalhes geométricos laranjas */
+  linear-gradient(135deg, #ff6f00 25%, transparent 25%) -50px -50px,
+  linear-gradient(225deg, #ff6f00 25%, transparent 25%) -50px -50px;
+  background-size: 100px 100px;  /* Tamanho dos detalhes triangulares */
+  background-color: #EE7026;
+}
+/*-------------Detalhes geométricos background---------------------*/
+.background {
+  position: relative;
+  overflow: hidden; /* Garante que os detalhes não "escapem" */
+  min-height: 100vh;
+}
+
+.background::before,
+.background::after {
+  content: '';
+  
+  border: 1px solid #ff6f00; /* Cor laranja */
+  transform: rotate(45deg); /* Inclinação das linhas */
+  opacity: 0.5; /* Transparência */
+}
+
+.background::before {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: -50px;
+}
+
+.background::after {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  bottom: 15%;
+  right: -60px;
+}
+
+/*-------------Inicio_Personalizar_Barra_Scroll----------------*/
+::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #323131;
+  /* Fundo do track da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EE7026;
+  /* Cor do thumb da scrollbar */
+}
+/*-------------Fim_Personalizar_Barra_Scroll----------------*/
+
+
+/* Estilo para a logo */
+.logo img {
+  width: auto;/*largura automática para manter a proporção*/
+  margin-left: 50px;/*margem esquerda dos links navbar*/
+}
+
+/* Ajuste para a navbar */
+.navbar {
+  background-color: #333333;/*cor de fundo da navbar*/
+  padding: 15px 40px;/*adiciona espaçamento interno na navbar*/
+  box-shadow: 0px 2px 20px 0px var(--laranja);/*adiciona sombra na navbar*/
+}
+:root {
+  --bgBodyDark: #333333;/*cor de fundo do body*/
+  --bgBodyLight: #dddddd;
+  --laranja: #ee7026;
+  --laranja-hover: #c75b1c;
+}
+.navbar-nav {
+  gap: 120px;/*espaçamento entre os links navbar*/
+  /*margin-left: 90px;/*margem esquerda dos links navbar*/
+}
+
+.navbar-nav li a {
+  text-decoration: none;/*remove o sublinhado dos links*/
+  color: #f2f2f2;/*cor do texto dos links*/
+  font-family: Arial, sans-serif;/*fonte dos links*/
+  font-weight: 600;/*espessura da fonte dos links*/
+  padding: 10px;/*adiciona espaçamento interno nos links*/
+}
+
+.topnav a:hover {
+  border-bottom: 1px solid #EE7026;
+  color: #ee7026;/*cor do texto ao passar o mouse*/
+  text-decoration: none;/*remove o sublinhado ao passar o mouse*/
+}
+
+/* Estilo para o botão toggle */
+.toggle {
+  display: flex;/*exibe o toggle como flexível*/
+  align-items: center;/*alinha o conteúdo verticalmente*/
+  cursor: pointer;/*altera o cursor ao passar o mouse*/
+}
+
+.toggle .label {
+  background-color: #ddd;/*cor de fundo do toggle*/
+  width: 50px;/*largura do toggle*/
+  border-radius: 25px;/*borda arredondada do toggle*/
+  padding: 5px;/*adiciona espaçamento interno no toggle*/
+}
+
+.toggle .label .box {
+  background-color: black;/*cor de fundo da box do toggle*/
+  background-image: url('./assets/img/sun.svg');/*adiciona a imagem do toggle*/
+  background-size: 10px 10px;/*ajusta o tamanho da imagem do toggle*/
+  background-repeat: no-repeat;/*remove a repetição da imagem*/
+  background-position: center;/*centraliza a imagem*/
+  width: 17px;/*largura da box*/
+  height: 17px;/*altura da box*/
+  border-radius: 50%;/*borda arredondada da box*/
+  transition: transform 0.3s ease;/*adiciona uma transição suave*/
+}
+
+header .container .toggle.active .label {
+  background-color: #f9f9f9;/*altera a cor de fundo do toggle quando acionado*/
+}
+
+header .container .toggle.active .label .box {
+  transform: translateX(25px);/*move a box para a direita quando acionado*/
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: flex;/*exibe o menu hamburguer como flexível*/
+    justify-content: center;/*alinha o conteúdo horizontalmente*/
+    align-items: center;/*alinha o conteúdo verticalmente*/
+    position: absolute;/*posiciona o menu hamburguer de forma absoluta*/
+    top: 80px; /* Ajuste a partir do topo, abaixo do header */
+    left: 50%;/*centraliza o menu hamburguer horizontalmente*/
+    transform: translateX(-50%);/*ajusta o menu hamburguer para o centro exato*/
+    width: 100%; /* Reduz a largura do menu */
+    max-height: 330px; /* Limita a altura do menu */
+    background-color: #333333;/*cor de fundo do menu hamburguer*/
+    z-index: 10;/*posiciona o menu hamburguer acima dos outros elementos*/
+    opacity: 0;/*define a opacidade do menu hamburguer como 0*/
+    visibility: hidden;/*oculta o menu hamburguer*/
+    transition: opacity 0.3s ease, visibility 0.3s ease;/*adiciona uma transição suave*/
+    /* border-radius: 8px; Adiciona bordas arredondadas */
+    padding: 30px;/*adiciona espaçamento interno no menu hamburguer*/
+  }
+
+  .navbar-collapse.show {
+    opacity: 1;/*altera a opacidade do menu hamburguer para 1*/
+    visibility: visible;/*exibe o menu hamburguer*/
+  }
+
+  /* Ajuste do estilo dos itens do menu para centralizar */
+  .navbar-nav {
+    display: flex;/*exibe os links do menu como flexível*/
+    flex-direction: column;/*alinha os links do menu em coluna*/
+    gap: 20px;/*espaçamento entre os links do menu*/
+    text-align: center;/*centraliza o texto dos links do menu*/
+    margin-left: 10px;/*margem esquerda dos links navbar*/
+  }
+
+  .navbar-nav li a {
+    font-size: 1.2rem;/*tamanho da fonte dos links do menu hamburguer*/
+  }
+
+  /* Estilo do botão hamburguer */
+  .navbar-toggler {
+    /* color: #EE7026;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    color: #EE7026; /* Define a cor do botão */
+    display: block; /* Exibe o botão como bloco */
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    left: 50%; /* Centraliza o botão horizontalmente */
+    transform: translateX(-50%); /* Ajusta o botão para o centro exato */
+  }
+  /* Estilo de cor interna, específico para o ícone interno do hamburguer */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23EE7026' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /*altera a cor do ícone hamburguer*/
+}
+  /* Estilo para a logo */
+
+.logo img {
+  height: 50px;
+  width: auto;/*largura automática para manter a proporção*/
+}
+}
+/*----------------------------carousel---------------------------*/
+/* Mantendo suas classes de background */
+
+.bg1 {
+  background: url("assets/backgroundheader1.svg");/*adiciona a imagem de fundo*/
+  /* transition: all 3ms ease; */
+}
+.bg2 {
+  background: url("assets/backgroundheader2.svg");/*adiciona a imagem de fundo*/
+  /* transition: all 3ms ease; */
+}
+
+.bg3 {
+  background: url("assets/backgroundheader3.svg");/*adiciona a imagem de fundo*/
+  /* transition: all 3ms ease; */
+}
+
+
+.bg1, .bg2, .bg3 {
+  background-size: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  width: 100%; /* Garante que o elemento ocupe toda a largura disponível */
+}
+
+#bottom-header {
+  height: 436px;/*altura do header*/
+  background-position: center;/*centraliza a imagem de fundo*/
+  z-index: 0;/*posiciona o header abaixo dos outros elementos*/
+}
+/*--------------------Classes-light-mode----------------------------------*/
+/* Classe para Modo Claro */
+.light-mode main {
+  background-color: var(--bgBodyLight);/*cor de fundo do body no modo claro*/
+}
+
+.light-mode .navbar {
+  background-color: #DDDDDD;/*cor de fundo da navbar no modo claro*/
+}
+
+.light-mode .toggle .label {
+  background-color: #333333; /* Fundo do toggle ajustado */
+}
+
+.light-mode .toggle .label .box {
+  background-color: #DDDDDD; /*Altera o background do Toggle quando acionado*/
+  background-image: url('./assets/img/moon.svg');/*Altera a imagem do Toggle quando acionado*/
+  transform: translateX(25px); /* Move a box para a direita no modo claro */
+}
+
+.light-mode .navbar-nav li a {
+  color: #333333; /*Altera a cor dos links do navbar quando acionado*/
+}
+/* Regras para o menu hamburguer em modo claro e tela pequena */
+@media (max-width: 768px) {
+  .light-mode .navbar-collapse.show {
+      background-color: #DDDDDD;/*Altera o background do menu hamburguer quando acionado*/
+  }
+
+  .light-mode .navbar-collapse.show .navbar-nav li a {
+      color: #333333; /*Altera a cor dos links do menu hamburguer quando acionado*/
+  }
+}
+
+.light-mode p { /* alttera a cor do texto da tag p, da seção história quando o Toggle estiver acionado*/
+  color:#333333
+}
+
+.light-mode .text-container h3 {
+  color: #333333;
+}
+
+/*Altera a imagem das marcas no modo light*/
+
+/* Modo padrão (imagens escuras) */
+
+
+/* Modo claro (light-mode) */
+.light-mode .img-nike {
+  content: url("assets/dark_nike.svg");/*altera a imagem da marca Nike*/
+}
+
+.light-mode .img-adidas {
+  content: url("assets/dark_adidas.svg");/*altera a imagem da marca Adidas*/
+}
+
+.light-mode .img-puma {
+  content: url("assets/dark_puma.svg");/*altera a imagem da marca Puma*/
+}
+
+.light-mode .img-lacoste {
+  content: url("assets/dark_lacoste.svg");/*altera a imagem da marca Lacoste*/
+}
+
+.light-mode .img-mizuno {
+  content: url("assets/dark_mizuno.svg");/*altera a imagem da marca Mizuno*/
+}
+
+.light-mode .img-newbalance {
+  content: url("assets/dark_newbalace.svg");/*altera a imagem da marca New Balance*/
+}
+
+.light-mode #contatos a {
+  color: var(--bgBodyDark);/*altera a cor do texto dos links da sessão contato*/
+}
+
+
+.light-mode .newsletterInput {
+        color: var(--bgBodyDark)!important;/*altera a cor do texto do input da newsletter*/
+}
+.light-mode .containerLoja a {
+  color: var(--bgBodyDark); /* Cor correta no modo claro */
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*seção história*/
+main {
+  background-color: var(--bgBodyDark);
+  display: flex;/*exibe o conteúdo como flexível*/
+  flex-direction: column;/*alinha o conteúdo em coluna*/
+  
+}
+
+#historia {
+  display: flex;/*exibe a seção história como flexível*/
+  flex-direction: column;/*alinha a seção história em coluna*/
+  row-gap: 50px;/*espaçamento entre os elementos*/
+  height: auto;/*altura automática*/
+  padding-bottom: 100px;
+
+  #texto-historia {
+    display: flex;/*exibe o texto da história como flexível*/
+    flex-direction: column;/*alinha o texto da história em coluna*/
+    row-gap: 40px;/*espaçamento entre os elementos*/
+    align-items: center;/*alinha o texto da história horizontalmente*/
+    padding: 20px;
+  }
+
+  p {
+    max-width: 1140px;/*largura máxima do texto da história*/
+    line-height: 150%;/*altura da linha do texto da história*/
+    text-align: center;/*alinha o texto da história centralizado*/
+  }
+}
+P {
+  color: white;/*cor do texto da história*/
+}
+.sectionTitle {
+  font-size: 32px;/*tamanho da fonte do título da seção*/
+  font-weight: normal;/*espessura da fonte do título da seção*/
+  color: var(--laranja);/*cor do título da seção*/
+  text-align: center;/*alinha o título da seção centralizado*/
+  span {
+    padding-top: 4px;/*espaçamento superior*/
+    border-top: 1px solid var(--laranja);/*adiciona uma borda superior*/
+  }
+  
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Seção Marcas */
+#marcas {
+  margin: 0 auto; /* Centraliza a seção horizontalmente */
+  width: 70%; /* Define a largura da seção para ocupar toda a largura do contêiner pai */
+  max-width: 1140px; /* Limita a largura máxima para 100%, evitando ultrapassar a tela */
+  position: relative;
+  z-index: 10; /* Garante que o conteúdo fique por cima das linhas */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 200px;
+}
+
+.marca-container {
+  display: flex; /* Define um contêiner flexível para organizar os elementos */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza os elementos da coluna horizontalmente */
+  text-align: center; /* Centraliza o texto horizontalmente dentro do contêiner */
+}
+
+.container-marcas {
+  margin: 55px 0px;/*adiciona margem superior e inferior*/
+  display: flex;/*exibe o contêiner de marcas como flexível*/
+  align-items: center;/*alinha os elementos verticalmente*/
+  justify-content: flex-start;/*alinha os elementos horizontalmente*/
+  column-gap: 36px;/*espaçamento entre os elementos*/
+  flex: 1;/*define o contêiner de marcas como flexível*/
+  width: 100%;/*largura total do contêiner*/
+  height: 150px;/*altura fixa de 150px*/
+  margin-left: -100px;/*margem esquerda do contêiner de marcas*/
+  img {
+    width: 150px;/*largura da imagem*/
+  }
+}
+.container-left {
+  display: flex;/*exibe o contêiner da esquerda como flexível*/
+  align-items: center;/*alinha os elementos verticalmente*/
+  justify-content: flex-end;/*alinha os elementos horizontalmente*/
+  column-gap: 36px;/*espaçamento entre os elementos*/
+  flex: 1;/*define o contêiner da esquerda como flexível*/
+  width: 100%;/*largura total do contêiner*/
+  height: 150px;/*altura fixa de 150px*/
+  margin-left: 85px;/*margem esquerda do contêiner da esquerda*/
+  img {
+    width: 150px;/*largura da imagem*/
+  }
+}
+
+.text-container {
+  max-width: 764px;  /*Define uma largura máxima para o contêiner de texto */
+  height: 150px; /* Altura fixa de 150px */
+  display: flex; /* Define um contêiner flexível para o texto */
+  flex-direction: column;  /* Alinhar o conteúdo em coluna */
+  justify-content: center; /*Centraliza o conteúdo dentro do contêiner*/
+  /*border: 2px solid violet;*/
+
+
+}
+
+.text-container h3 {
+  color: white; /* Define a cor do texto como branco */
+  font-weight: 600; /* Aplica uma fonte semi-negrito */
+  font-size: 20px; /* Define o tamanho da fonte */
+  width: 100%; /* Define a largura do título para 100% do contêiner */
+  line-height: 125%; /* Define a altura da linha para melhorar o espaçamento */
+}
+
+.text-container p {
+  line-height: 150%; /* Define uma altura de linha maior para melhor legibilidade */
+  font-size: 16px; /* Tamanho da fonte para o parágrafo */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+  section #marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-wrap: nowrap;
+  }
+
+  #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container-marcas{
+    height: auto;/*altura automática*/
+    position: relative; /* Define o contêiner como relativo para posicionar a imagem como overlay */
+    flex-direction: column; /* Muda o layout para coluna no mobile */
+    align-items: center; /* Centraliza os elementos no contêiner */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 100px 0; /* Espaçamento interno para separação entre blocos */
+    text-align: center; /* Centraliza o texto */
+    margin: 0;
+  }
+
+  .text-container {
+    width: 400px;
+  }
+
+  .text-container p {
+    text-align: center;
+  }
+
+
+  .container-left {
+    position: relative; /* Define o contêiner como relativo para posicionar a imagem como overlay */
+    flex-direction: column; /* Muda o layout para coluna no mobile */
+    align-items: center; /* Centraliza os elementos no contêiner */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    height: auto; /* Altura automática para ajuste de conteúdo */
+    padding: 100px 0; /* Espaçamento interno para separação entre blocos */
+    text-align: center; /* Centraliza o texto */
+    margin: 0;
+  }
+
+  .container-marcas img,
+  .container-left img {
+    width: 75%; /* A imagem ocupa 75% da largura do contêiner */
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    opacity: 0.1; /* Reduz a opacidade da imagem para que funcione como fundo */
+    position: absolute; /* Posicionamento absoluto para sobrepor a imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste de posição para centralização exata */
+    z-index: 1; /* Coloca a imagem abaixo do texto */
+    
+  }
+
+  .text-container {
+    position: relative; /* Posiciona o contêiner de texto relativo à imagem */
+    z-index: 2; /* Garante que o texto esteja acima da imagem */
+    max-width: auto; /* Limita a largura do texto para caber na tela */
+    padding: 80px; /* Adiciona espaçamento interno ao contêiner de texto */
+    color: white; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto no contêiner */
+    border-radius: 8px; /* Bordas arredondadas para o contêiner */
+    padding: 10px; /* Aumenta o padding para melhor espaçamento */
+  }
+
+  .text-container h3 {
+    font-size: 24px; /* Aumenta o tamanho da fonte do título para mobile */
+    margin-bottom: 10px; /* Espaçamento inferior para separar do parágrafo */
+  }
+
+  .text-container p {
+    font-size: 16px; /* Tamanho da fonte para o parágrafo no mobile */
+    line-height: 1.5; /* Altura de linha ajustada para leitura confortável */
+    padding-left: 10px; /* Espaço à esquerda para separar do contêiner */
+  }
+
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Seção Vitrine */
+#slider {
+  display: flex;/*exibe o slider como flexível*/
+  justify-content: center; /*space-around; alinha o conteúdo horizontalmente*/
+  width: 100%;/* 1440pxlargura do slider*/
+  margin: 0 auto;/*centraliza o slider horizontalmente*/
+  position: relative;/*posiciona o slider de forma relativa*/
+  overflow: hidden; /* Impede que elementos transbordem */
+}
+#list {
+  position: absolute;/*posiciona a lista de imagens de forma absoluta*/
+  top: 0;/*posiciona a lista de imagens no topo*/
+  left: 0;/*posiciona a lista de imagens à esquerda*/
+  height: 100%;/*altura de 100%*/
+  display: flex;/*exibe a lista de imagens como flexível*/
+  width: max-content;/*largura máxima*/
+  column-gap: 30px;/*espaçamento entre as imagens*/
+}
+
+.group {
+  width: 1300px;/*largura do grupo de imagens*/
+  height: 100%;/*altura de 100%*/
+  display: flex;/*exibe o grupo de imagens como flexível*/
+  justify-content: space-between;/*alinha o conteúdo horizontalmente*/
+  object-fit: cover;/*ajusta a imagem para cobrir o contêiner*/
+  /* border: 2px dotted blue; */
+}
+
+.pictureContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pictureContainer img {
+  width: 300px;/*largura da imagem*/
+  text-align: center; /* Centraliza o texto */
+  /* border: 2px dotted rgb(18, 237, 230); */
+}
+
+
+
+#lojas{
+  padding-top: 5%;
+}
+
+#lojas .containerLoja h4,
+#lojas .containerHorario h4,
+#contatos h4 {
+  font-size: 20px;/*tamanho da fonte do título*/
+  color: var(--laranja);
+  margin-bottom: 15px;
+  /* border: 2px dotted blue; */
+  margin-top: 55px;
+}
+
+.riscoMenor {
+  border-bottom: 1px solid var(--laranja);
+  padding-bottom: 4px;
+  
+}
+/*links seção contato*/
+#decoration {
+  text-decoration: none;/*remove o sublinhado do link*/
+}
+
+main a{
+  text-decoration: none;
+  color: var(--bgBodyLight);
+}
+
+
+/*---------------------------------Inicio_Footer-------------------------------*/
+footer {
+  border-top: 1px solid var(--laranja);
+  background-color: var(--bgBodyDark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 16px;
+  }
+}
+
+.light-mode footer{
+  background-color: #DDDDDD;
+}
+
+
+/*---------------------------------Fim_Footer-------------------------------*/
+
+/*---------------------------------Inicio_ScrollToTop-------------------------------*/
+#scrollToTop {
+  position: fixed;
+  bottom: 20px; /* Ajusta a distância da parte inferior */
+  left: 95%; /* Ajusta a distância da lateral direita */
+  z-index: 1000; /* Certifica-se de que o botão ficará acima dos outros elementos */
+}
+
+#scrollToTop img {
+  width: auto; /* Ajusta o tamanho do botão */
+  height: 50px;
+  cursor: pointer; /* Mostra um cursor de mão ao passar sobre o botão */
+  transition: transform 0.5s ease;
+}
+
+#scrollToTop img:hover {
+  transform: scale(1.2); /* Aumenta ligeiramente o botão ao passar o mouse */
+}
+
+@media (max-width: 800px) {
+  #scrollToTop {
+    position: fixed;
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 80%; /* Ajusta a distância da lateral direita */
+    z-index: 1000; /* Certifica-se de que o botão ficará acima dos outros elementos */
+  }
+}
+/*---------------------------------Fim_ScrollToTop-------------------------------*/

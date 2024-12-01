@@ -18,7 +18,7 @@ output:
   <div style="flex: 1; text-align: center;">
     <h1 style="margin: 0; font-size: 2.5em; color: #ff4500;">Apresentação Pi</h1>
     <p style="margin: 5px 0; font-size: 1.5em; color: black;">Fatec Araras</p>
-    <p style="margin: 5px 0; font-size: 1.2em; color: black;">`r Sys.Date()`</p> <!-- Pode substituir por 2024-10-29 para a data automática no Rmarkdown -->
+    <p style="margin: 5px 0; font-size: 1.2em; color: black;">2024-12-04</p> <!-- Pode substituir por  `r Sys.Date()` para a data automática no Rmarkdown -->
     <p style="margin: 15px 0; font-size: 1.5em; color: black;">Grupo 02</p>
   </div>
   <div style="flex: 1; text-align: right;  margin-top: 40px;">
@@ -107,7 +107,7 @@ output:
 <br>
 
 <h2 style="color: black;"> O que nossa proposta resolve ?</h2>
-<a> Atualização da imagem digital da Empresa.</a>
+<a> Atualizar a imagem digital da Empresa.</a>
 
 ---
 <!--------Slide--05--------------------->
@@ -128,7 +128,7 @@ output:
 <p><h3 style="color: black;">Estrutura e Funcionalidades de Interfaces</h3></p>
 <!-- Foto centralizada -->
 <p class="slide_05"align="center">
-  <img src="./img/escopo1.PNG" alt="Apresentação" style="width: 80%; height: auto;">
+  <img src="./img/escopo1.PNG" alt="Apresentação" style="width: 70%; height: auto;">
 </p>
 
 ---
@@ -149,7 +149,7 @@ output:
 <p><h3 style="color: black;">Backend e Integrações</h3></p>
 <!-- Foto centralizada -->
 <p  class="slide_06" align="center">
-  <img src="./img/escopo2.PNG" alt="Apresentação" style="width: 80%; height: auto;">
+  <img src="./img/escopo2.PNG" alt="Apresentação" style="width: 80%; margin-top: 100px; height: auto;">
 </p>
 
 ---
@@ -172,7 +172,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center">
-  <img src="./img/RF_01.PNG" alt="Apresentação" style="width: 80%; height: auto;">
+  <img src="./img/RF_01.PNG" alt="Apresentação" style=" margin-top:100px;  width: 80%; height: auto;">
 </p>
 
 
@@ -194,7 +194,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center">
-  <img src="./img/RF_02.PNG" alt="Apresentação" style="width: 80%; height: auto;">
+  <img src="./img/RF_02.PNG" alt="Apresentação" style="margin-top:100px;  width:75%; height: auto;">
 </p>
 ---
 <!--------Slide--0-9-------------------->
@@ -216,7 +216,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center" >
-  <img src="./img/RN_01.PNG" alt="Apresentação" style="width: 80%; height: auto;">
+  <img src="./img/RN_01.PNG" alt="Apresentação" style="margin-top: 100px; width: 80%; height: auto;">
 </p>
 ---
 <!--------Slide--10-------------------->
@@ -264,7 +264,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center">
-  <img src="./img/Foto_casos_de_uso.png" alt="Apresentação" style="width: 60%; height: auto;">
+  <img src="./img/Foto_casos_de_uso.png" alt="Apresentação" style="width: 56%; height: auto;">
 </p>
 ---
 <!--------Slide--12--------------------->
@@ -285,7 +285,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center">
-  <img src="./img/contexto.jpeg" alt="Apresentação" style="width: 33%; height: auto;">
+  <img src="./img/contexto.jpeg" alt="Apresentação" style="width: 30%; height: auto;">
 </p>
 ---
 <!--------Slide--13-------------------->
@@ -348,7 +348,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center">
- <img src="./img/trello.png" alt="Apresentação" style="width: 90%; height: auto;">
+ <img src="./img/trello.png" alt="Apresentação" style="margin-top: 100px; width: 90%; height: auto;">
 </p>
 
 
@@ -372,7 +372,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center">
-  <img src="./img/beneficios.PNG" alt="Apresentação" style="width: 90%; height: auto;">
+  <img src="./img/beneficios.PNG" alt="Apresentação" style="margin-top: 50px;width: 90%; height: auto;">
 </p>
 
 
@@ -413,7 +413,7 @@ output:
 
 <!-- Foto centralizada -->
 <p align="center">
-  <img src="./img/branding.svg" alt="Apresentação" style="width: 55%; height: auto;">
+  <img src="./img/branding.svg" alt="Apresentação" style="width: 53%; height: auto;">
 </p>
 
 ---
@@ -432,8 +432,8 @@ output:
 
 <!------------imagens----------------------->
 <p align="center">
-  <img src="./img/index_dark.jpg" alt="Apresentação" style="width: 30%; height: auto;">
-  <img src="./img/index_light.jpg" alt="Apresentação" style="width: 30%; height: auto; margin-left: 100px;">
+  <img src="./img/index_dark.jpg" alt="Apresentação" style="width: 40%; height: auto;">
+  <img src="./img/index_light.jpg" alt="Apresentação" style="width: 40%; height: auto; margin-left: 100px;">
 </p>
 
 ---
@@ -451,31 +451,13 @@ output:
 <!---fim-Logos-topo-da-pagina---->
 
 <!------------imagens----------------------->
-<p align="center" style="display: flex;  justify-content: center;">
+<p align="center" style="display: flex; margin-top: 180px; justify-content: center;">
   <img src="./img/faq_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
   <img src="./img/faq_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </p>
+
 ---
 <!--------Slide--21-------------------->
-<!---------Prototipação--principais--telas-faq-aberta------------------>
-<!---início-Logos-topo-da-pagina---->
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <div>
-     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
-  </div>
-  <div><!--largura-width--> <!-----Altura-height--->
-    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
-  </div>
-</div>
-<!---fim-Logos-topo-da-pagina---->
-
-<!------------imagens----------------------->
-<p align="center" style="display: flex;  justify-content: center;">
-  <img src="./img/faq_aberto_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
-  <img src="./img/faq_aberto_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
-</p>
----
-<!--------Slide--22-------------------->
 <!---------Prototipação--principais--telas-produtos------------------>
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -490,12 +472,50 @@ output:
 
 <!------------imagens----------------------->
 <p align="center" style="display: flex;  justify-content: center; align-items: center;">
-  <img src="./img/produtos_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
-  <img src="./img/produtos_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
+  <img src="./img/produto_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
+  <img src="./img/produto_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </p>
 
 ---
-<!--------Slide--23--------------------->
+<!--------Slide--22-------------------->
+<!---------Prototipação--principais--tela- contato------------------>
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!------------imagens----------------------->
+<p align="center" style="display: flex; margin-top: 180px; justify-content: center;">
+  <img src="./img/contato_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
+  <img src="./img/contato_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
+</p>
+---
+<!--------Slide--23-------------------->
+<!---------Prototipação--principais--tela- contato------------------>
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+<!------------imagens----------------------->
+<p align="center" style="display: flex; margin-top: 180px; justify-content: center;">
+  <img src="./img/lojas_dark.jpg" alt="Apresentação" style="width: 50%; height: auto;">
+  <img src="./img/lojas_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
+</p>
+---
+<!--------Slide--24--------------------->
 <!---------Prototipação--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -514,7 +534,7 @@ output:
 </p>
 
 ---
-<!--------Slide--24--------------------->
+<!--------Slide--25--------------------->
 <!---------Codificação--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -533,7 +553,7 @@ output:
 </p>
 ---
 
-<!--------Slide--25--------------------->
+<!--------Slide--26--------------------->
 <!---------Plano de Testes--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -553,7 +573,7 @@ output:
 </p>
 
 ---
-<!--------Slide--26--------------------->
+<!--------Slide--27--------------------->
 <!---------Implantação e Manutenção--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -571,7 +591,7 @@ output:
 <h2 style="color: black;"> Plano de manutenção:</h2>
 <a> Frequência Mensal</a>
 <br>
-<a> - Verificação de atualizações de segurança nas bibliotecas utilizadas..</a>
+<a> - Verificação de atualizações de segurança nas bibliotecas utilizadas.</a>
 <br>
 <a> - Análise de desempenho da aplicação para identificar possíveis melhorias. </a>
 <br>
@@ -588,7 +608,7 @@ output:
 <br>
 
 ---
-<!--------Slide--27--------------------->
+<!--------Slide--28--------------------->
 <!---------Plano de suporte--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -613,7 +633,7 @@ output:
 <a> - Equipe responsável, equipe de desenvolvimento e manutenção do site. </a>
 
 ---
-<!--------Slide--28--------------------->
+<!--------Slide--29--------------------->
 <!---------Evolução--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -641,9 +661,12 @@ output:
 <br>
 <br>
 <a> - Adição de novas categorias de produtos conforme a demanda. </a>
+<br>
+<br>
+<a>- Melhoria na API, implementando restrições usando “cors”, para somente permitir requisições de domínios autorizados, visando proteger o banco de dados.</a>
 
 ---
-<!--------Slide-29-------->
+<!--------Slide-30-------->
 <!-------Links-------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -681,7 +704,7 @@ output:
 
 
 ---
-<!--------Slide-30------>
+<!--------Slide31------>
 <!----Tecnologias da Apn-------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -700,7 +723,7 @@ output:
     <img src="img/xa.png" alt="Image" width="650" height="450" />
 </p>
 ---
-<!--------Slide--31--------------------->
+<!--------Slide--32--------------------->
 <!---------Perguntas--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -717,7 +740,7 @@ output:
 <h1 style=" margin-left: 100px; margin-top: 100px;">Fim !<p style="  margin-top: 100px;"> <h1>Muito Obrigado !!!</h1></p</h1>
 </div>
 ---
-<!--------Slide--32--------------------->
+<!--------Slide--33--------------------->
 <!---------Perguntas--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
