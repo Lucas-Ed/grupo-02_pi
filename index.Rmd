@@ -79,7 +79,7 @@ output:
 
 <!-- imagem-->
 <p align="center">
-    <img src="./img/site_atual.png" alt="Apresentação" style="width: 55%; height: auto;">
+    <img src="./img/site_atual.png" alt="Apresentação" style="width: 50%; height: auto;">
 </p>
 
 ---
@@ -515,7 +515,27 @@ output:
   <img src="./img/lojas_light.jpg" alt="Apresentação" style="width: 50%; height: auto; margin-left: 80px;">
 </p>
 ---
-<!--------Slide--24--------------------->
+<!--------Slide--24------------------->
+<!---------Prototipação--video------------------>
+<!---início-Logos-topo-da-pagina---->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+     <img src="./img/fatec.png" alt="Imagem de apresentação" style="width: 100px;"/>
+  </div>
+  <div><!--largura-width--> <!-----Altura-height--->
+    <img src="./img/logo.png" alt="Imagem de apresentação" style="width: 300px;"/>
+  </div>
+</div>
+<!---fim-Logos-topo-da-pagina---->
+
+
+
+<video width="250" style="margin-left: 35%;" controls>
+  <source src="./img/acessibilidade.mp4" type="video/mp4">
+</video>
+
+---
+<!--------Slide--25--------------------->
 <!---------Prototipação--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -534,7 +554,7 @@ output:
 </p>
 
 ---
-<!--------Slide--25--------------------->
+<!--------Slide--26--------------------->
 <!---------Codificação--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -553,7 +573,7 @@ output:
 </p>
 ---
 
-<!--------Slide--26--------------------->
+<!--------Slide--27--------------------->
 <!---------Plano de Testes--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -573,7 +593,7 @@ output:
 </p>
 
 ---
-<!--------Slide--27--------------------->
+<!--------Slide--28--------------------->
 <!---------Implantação e Manutenção--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -608,7 +628,7 @@ output:
 <br>
 
 ---
-<!--------Slide--28--------------------->
+<!--------Slide--29--------------------->
 <!---------Plano de suporte--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -633,7 +653,7 @@ output:
 <a> - Equipe responsável, equipe de desenvolvimento e manutenção do site. </a>
 
 ---
-<!--------Slide--29--------------------->
+<!--------Slide--30--------------------->
 <!---------Evolução--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -666,7 +686,7 @@ output:
 <a>- Melhoria na API, implementando restrições usando “cors”, para somente permitir requisições de domínios autorizados, visando proteger o banco de dados.</a>
 
 ---
-<!--------Slide-30-------->
+<!--------Slide-31-------->
 <!-------Links-------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -704,7 +724,7 @@ output:
 
 
 ---
-<!--------Slide31------>
+<!--------Slide32------>
 <!----Tecnologias da Apn-------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -720,10 +740,10 @@ output:
 <h2  style="color: black;"> Tecnologias utilizadas para esta apresentação: </h2>
 
 <p align="center">
-    <img src="img/xa.png" alt="Image" width="650" height="450" />
+    <img src="img/xa.png" alt="Image" width="645" height="450" />
 </p>
 ---
-<!--------Slide--32--------------------->
+<!--------Slide--33--------------------->
 <!---------Perguntas--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -740,7 +760,7 @@ output:
 <h1 style=" margin-left: 100px; margin-top: 100px;">Fim !<p style="  margin-top: 100px;"> <h1>Muito Obrigado !!!</h1></p</h1>
 </div>
 ---
-<!--------Slide--33--------------------->
+<!--------Slide--34--------------------->
 <!---------Perguntas--------------------->
 <!---início-Logos-topo-da-pagina---->
 <div style="display: flex; align-items: center; justify-content: space-between;">

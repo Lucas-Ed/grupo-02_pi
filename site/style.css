@@ -147,7 +147,7 @@ header .container .toggle.active .label .box {
     justify-content: center;/*alinha o conteúdo horizontalmente*/
     align-items: center;/*alinha o conteúdo verticalmente*/
     position: absolute;/*posiciona o menu hamburguer de forma absoluta*/
-    top: 80px; /* Ajuste a partir do topo, abaixo do header */
+    top: 90px; /* Ajuste a partir do topo, abaixo do header */
     left: 50%;/*centraliza o menu hamburguer horizontalmente*/
     transform: translateX(-50%);/*ajusta o menu hamburguer para o centro exato*/
     width: 100%; /* Reduz a largura do menu */

@@ -37,6 +37,7 @@ Licença Creative Commons 4.0 não comercial, para mais informações acesse o l
  <a href="#-Api ">Api</a> •
  <!-- <a href="#Acessibilidade">Acessibilidade</a> -->
  <a href="#-Deploy">Deploy</a> •
+ <a href="#-Live">Live</a> •
   <a href="#-autores">Autores</a> •
  <a href="#memo-licença">Licença</a>
  
@@ -85,6 +86,13 @@ Acesse a documentação do projeto [aqui.](https://github.com/Lucas-Ed/grupo-02_
 ## 📲 Deploy
 
 Acesse o site do Pi [aqui.](https://csfashion-pi.netlify.app)
+
+# 👓 Live
+
+<p>Assista a Live de Apresentação do projeto !</p>
+<p>No video abaixo, veja a apresentação do grupo 02.</p>
+
+[![Watch the video](./img/capa_video.PNG)](https://www.youtube.com/live/f9u9XKobX2M)
 
 ## 👨🏼‍🎓 Autores
 <table>
