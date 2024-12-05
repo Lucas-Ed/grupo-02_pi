@@ -92,7 +92,7 @@ Acesse o site do Pi [aqui.](https://csfashion-pi.netlify.app)
 <p>Assista a Live de Apresentação do projeto !</p>
 <p>No video abaixo, veja a apresentação do grupo 02.</p>
 
-[![Watch the video](./img/capa_video.PNG)](https://www.youtube.com/live/f9u9XKobX2M)
+[![Watch the video](./img/capa_video.PNG)](https://www.youtube.com/watch?v=jeLNnmUUFrM)
 
 ## 👨🏼‍🎓 Autores
 <table>
